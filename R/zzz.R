@@ -440,22 +440,6 @@
 
 #' @title DATASET_TITLE
 #' @description DATASET_DESCRIPTION
-#' @format A data frame with 89 rows and 6 variables:
-#' \describe{
-#'   \item{\code{Species}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{culture_notes}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{red}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{green}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{blue}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{colour.hex}}{integer COLUMN_DESCRIPTION}
-#'}
-#' @details DETAILS
-"sporecolour"
-
-
-
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
 #' @format A data frame with 72 rows and 5 variables:
 #' \describe{
 #'   \item{\code{Year}}{integer COLUMN_DESCRIPTION}
@@ -545,37 +529,74 @@
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Memory of words dataset
+#' @description A dataset on the number of words remembered from list,
+#' for various learning techniques, and in two age groups.
 #' @format A data frame with 100 rows and 3 variables:
 #' \describe{
-#'   \item{\code{Age}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Process}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Words}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{Age}}{integer Age of person tested (yr)}
+#'   \item{\code{Process}}{factor One of five methods used to memorize the words. }
+#'   \item{\code{Words}}{double Number of words recalled.}
 #'}
-#' @details DETAILS
-"eysenck"
+#' @details Description taken from source: "Why do older people often seem not to
+#' remember things as well as younger people? Do they not pay attention? Do they
+#' just not process the material as thoroughly? One theory regarding memory is that
+#' verbal material is remembered as a function of the degree to which is was processed
+#' when it was initially presented. Eysenck (1974) randomly assigned 50 younger
+#' subjects and 50 older (between 55 and 65 years old) to one of five learning groups.
+#' The Counting group was asked to read through a list of words and count the number of
+#' letters in each word. This involved the lowest level of processing. The Rhyming group
+#' was asked to read each word and think of a word that rhymed with it. The Adjective group
+#' was asked to give an adjective that could reasonably be used to modify each word in the
+#' list. The Imagery group was instructed to form vivid images of each word, and this was
+#' assumed to require the deepest level of processing. None of these four groups was told
+#' they would later be asked to recall the items. Finally, the Intentional group was asked
+#' to memorize the words for later recall. After the subjects had gone through the list of
+#' 27 items three times they were asked to write down all the words they could remember."
+#' @source <http://www.statsci.org/data/general/eysenck.html>.
+"memory"
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Pulse Rates before and after Exercise
+#' @description Pulse rates measured on 110 participating students. Half of the students
+#' ran in place for one minute, before their pulse rate was measured again.
 #' @format A data frame with 110 rows and 11 variables:
 #' \describe{
-#'   \item{\code{Height}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Weight}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{Age}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Gender}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Smokes}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Alcohol}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Exercise}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Ran}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Pulse1}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Pulse2}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Year}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{Height}}{integer Height (cm)}
+#'   \item{\code{Weight}}{double Weight (kg)}
+#'   \item{\code{Age}}{integer Age (years)}
+#'   \item{\code{Gender}}{integer Sex (1 = male, 2 = female)}
+#'   \item{\code{Smokes}}{integer Regular smoker? (1 = yes, 2 = no)}
+#'   \item{\code{Alcohol}}{integer Regular drinker? (1 = yes, 2 = no)}
+#'   \item{\code{Exercise}}{integer Frequency of exercise (1 = high, 2 = moderate, 3 = low)}
+#'   \item{\code{Ran}}{integer Whether the student ran or sat between
+#'   the first and second pulse measurements (1 = ran, 2 = sat)}
+#'   \item{\code{Pulse1}}{integer First pulse measurement (rate per minute)}
+#'   \item{\code{Pulse2}}{integer Second pulse measurement (rate per minute)}
+#'   \item{\code{Year}}{integer Year of class (93 - 98)}
 #'}
-#' @details DETAILS
-"ms212"
+#' @details Description taken from source: "Students in an introductory statistics class
+#' (MS212 taught by Professor John Eccleston and Dr Richard Wilson at The University of
+#' Queensland) participated in a simple experiment. The students took their own pulse rate.
+#' They were then asked to flip a coin. If the coin came up heads, they were to run in place
+#' for one minute. Otherwise they sat for one minute. Then everyone took their pulse again.
+#' The pulse rates and other physiological and lifestyle data are given in the data.
+#' Five class groups between 1993 and 1998 participated in the experiment. The lecturer,
+#' Richard Wilson, was concerned that some students would choose the less strenuous option of
+#' sitting rather than running even if their coin came up heads, so in the years 1995-1998 a
+#' different method of random assignment was used. In these years, data forms were handed out
+#' to the class before the experiment. The forms were pre-assigned to either running or non-running
+#' and there were an equal number of each. In 1995 and 1998 not all of the forms were returned
+#' so the numbers running and sitting was still not entirely controlled."
+#' @source <http://www.statsci.org/data/oz/ms212.html>
+#' @examples
+#'
+#' with(pulse, plot(Weight, Pulse2-Pulse1, pch=19,
+#'   col=c("red2", "dimgrey")[Ran]))
+#' abline(h=0, lty=5)
+#' legend("topleft", c("))
+"pulse"
 
 
 
