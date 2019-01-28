@@ -3,22 +3,33 @@
 \docType{data}
 \name{germination_water}
 \alias{germination_water}
-\title{DATASET_TITLE}
+\title{Seed germination as affected by water}
 \format{A data frame with 352 rows and 5 variables:
 \describe{
-  \item{\code{species}}{integer COLUMN_DESCRIPTION}
-  \item{\code{site}}{integer COLUMN_DESCRIPTION}
-  \item{\code{water.potential}}{double COLUMN_DESCRIPTION}
-  \item{\code{germ}}{integer COLUMN_DESCRIPTION}
-  \item{\code{n}}{integer COLUMN_DESCRIPTION}
+  \item{\code{species}}{factor One of four Melaleuca species}
+  \item{\code{site}}{integer Coding for the site where the seed was collected}
+  \item{\code{water.potential}}{double Water potential of the seed (Mpa) after
+  incubation (low values is drier)}
+  \item{\code{germ}}{integer Number of germinated seeds}
+  \item{\code{n}}{integer Number of seeds tested (25 for all rows)}
 }}
 \usage{
 germination_water
 }
 \description{
-DATASET_DESCRIPTION
+Two datasets on the germination success of seeds of four \emph{Melaleuca}
+species, when subjected to temperature, fire cue, and dehydration treatments. Seeds were
+collected from a number of sites and subjected to 6 temperature treatments and fire cues
+(in the fire germination data), or two a range of dehydration levels (in the water germination
+data).
+
+This dataset contains the water treatment data.
 }
-\details{
-DETAILS
+\examples{
+data(germination_water)
+with(germination_water,
+  plot(jitter(water.potential), germ/n,
+    pch=21, bg=terrain.colors(4)[species])
+)
 }
 \keyword{datasets}

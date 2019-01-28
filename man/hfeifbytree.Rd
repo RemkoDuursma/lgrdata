@@ -3,23 +3,35 @@
 \docType{data}
 \name{hfeifbytree}
 \alias{hfeifbytree}
-\title{DATASET_TITLE}
+\title{I x F at the HFE - tree observations}
 \format{A data frame with 9592 rows and 6 variables:
 \describe{
-  \item{\code{ID}}{integer COLUMN_DESCRIPTION}
-  \item{\code{plotnr}}{integer COLUMN_DESCRIPTION}
-  \item{\code{treat}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Date}}{integer COLUMN_DESCRIPTION}
-  \item{\code{height}}{double COLUMN_DESCRIPTION}
-  \item{\code{diameter}}{double COLUMN_DESCRIPTION}
+  \item{\code{ID}}{integer A unique identifier for each tree.}
+  \item{\code{plotnr}}{integer A total of sixteen plots (four treatments).}
+  \item{\code{treat}}{integer One of four treatments (I - irrigated, F - dry fertilized,
+  IL - Liquid fertilizer plus irrigation, C - control)}
+  \item{\code{Date}}{factor The date of measurement (YYYY-MM-DD)}
+  \item{\code{height}}{double Mean height for the sample trees ($m$).}
+  \item{\code{diameter}}{double Mean diameter for the sample trees ($cm$).}
 }}
+\source{
+Data courtesy of Craig Barton and Burhan Amiji, from Western Sydney University.
+}
 \usage{
 hfeifbytree
 }
 \description{
-DATASET_DESCRIPTION
+Heights and stem diameters of trees growing in a fertilization x irrigation experiment in
+Richmond, New South Wales, Australia, as part pf the Hawkesbury Forest Experiment (HFE).
+A total of 16 plots, each with 72 Eucalyptus saligna trees, was remeasured 17 times between
+2008 and 2012. Treatments to the plots were either control (C), applied with fertilizer (F),
+irrigation (I), or irrigation+fertilization (IF).
+
+This dataset contains the tree-level observations, see \code{\link{hfeifplotmeans}} for
+averaged data.
 }
-\details{
-DETAILS
+\examples{
+# Variable sample sizes over time. On many occassions, subsamples were measured.
+ftable(xtabs(~Date+treat, data=hfeifbytree))
 }
 \keyword{datasets}

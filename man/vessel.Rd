@@ -3,20 +3,24 @@
 \docType{data}
 \name{vessel}
 \alias{vessel}
-\title{DATASET_TITLE}
+\title{Xylem vessel diameters}
 \format{A data frame with 550 rows and 3 variables:
 \describe{
-  \item{\code{position}}{integer COLUMN_DESCRIPTION}
-  \item{\code{imagenr}}{integer COLUMN_DESCRIPTION}
-  \item{\code{vesseldiam}}{double COLUMN_DESCRIPTION}
+  \item{\code{position}}{integer Either 'base' or 'apex' :
+  the tree was sampled at stem base and near the top of the tree.}
+  \item{\code{imagenr}}{integer At the stem base, six images were
+  analyzed (and all vessels measured in that image). At apex, three images.}
+  \item{\code{vesseldiam}}{double Diameter of individual water-conducting vessels ($\mu$ m).}
 }}
+\source{
+Sebastian Pfautsch
+}
 \usage{
 vessel
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+Measurements of diameters of xylem (wood) vessels
+on a single \emph{Eucalyptus saligna} tree grown at the
+Hawkesbury Forest Experiment.
 }
 \keyword{datasets}

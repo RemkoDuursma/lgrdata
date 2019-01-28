@@ -3,25 +3,30 @@
 \docType{data}
 \name{fluxtower}
 \alias{fluxtower}
-\title{DATASET_TITLE}
+\title{Fluxtower data}
 \format{A data frame with 244 rows and 8 variables:
 \describe{
-  \item{\code{TIMESTAMP}}{integer COLUMN_DESCRIPTION}
-  \item{\code{FCO2}}{double COLUMN_DESCRIPTION}
-  \item{\code{FH2O}}{double COLUMN_DESCRIPTION}
-  \item{\code{ustar}}{double COLUMN_DESCRIPTION}
-  \item{\code{Tair}}{double COLUMN_DESCRIPTION}
-  \item{\code{RH}}{double COLUMN_DESCRIPTION}
-  \item{\code{Tsoil}}{double COLUMN_DESCRIPTION}
-  \item{\code{Rain}}{integer COLUMN_DESCRIPTION}
+  \item{\code{TIMESTAMP}}{factor Date and time}
+  \item{\code{FCO2}}{double Canopy CO2 flux ($\mu$ mol m$^{-2}$ s$^{-1}$)}
+  \item{\code{FH2O}}{double Canopy H2O flux (mmol m$^{-2}$ s$^{-1}$)}
+  \item{\code{ustar}}{double Roughness length (m s$^{-1}$)}
+  \item{\code{Tair}}{double Air temperature (degrees C)}
+  \item{\code{RH}}{double Relative humidity (\%)}
+  \item{\code{Tsoil}}{double Soil temperature (degrees C)}
+  \item{\code{Rain}}{integer Rainfall (mm half hour$^{-1}$)}
 }}
+\source{
+Data kindly provided by Victor Resco de Dios (in 2011), and simplified somewhat.
+}
 \usage{
 fluxtower
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+This dataset contains measurements of CO$_2$ and H$_2$O fluxes
+(and related variables) over a pine forest in Quintos de Mora, Spain.
+The site is a mixture of \emph{Pinus pinaster} and \emph{Pinus pinea},
+and was planted in the 1960's.
+
+Data need to be cleaned to some extent (the purpose of this example dataset).
 }
 \keyword{datasets}

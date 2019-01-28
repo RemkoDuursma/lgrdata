@@ -55,16 +55,14 @@ germination_fire <- read.csv("germination_fire.csv")
 germination_water <- read.csv("germination_water.csv")
 hfeifbytree <- read.csv("HFEIFbytree.csv")
 hfeifplotmeans <- read.csv("HFEIFplotmeans.csv")
-hfeifplotmeans2012 <- read.csv("HFEIFplotmeans2012.csv")
 hfemet2008 <- read.csv("HFEmet2008.csv")
 howell <- read.csv("howell.csv")
 hydro <- read.csv("Hydro.csv")
 masslost <- read.csv("masslost.csv")
-prefdata <- read.csv("prefdata.csv")
+treecanopy <- read.csv("prefdata.csv")
 pupae <- read.csv("pupae.csv")
 rain <- read.csv("Rain.csv")
 sydney_hobart_times <- read.csv("sydney_hobart_times.csv")
-tibplat <- read.csv("tibplat.csv")
 vessel <- read.csv("Vessel.csv")
 weightloss <- read.csv("Weightloss.csv")
 wildmousemetabolism <- read.csv("wildmousemetabolism.csv")
@@ -95,16 +93,14 @@ use_data(germination_fire,overwrite=TRUE)
 use_data(germination_water,overwrite=TRUE)
 use_data(hfeifbytree,overwrite=TRUE)
 use_data(hfeifplotmeans,overwrite=TRUE)
-use_data(hfeifplotmeans2012,overwrite=TRUE)
 use_data(hfemet2008,overwrite=TRUE)
 use_data(howell,overwrite=TRUE)
 use_data(hydro,overwrite=TRUE)
 use_data(masslost,overwrite=TRUE)
-use_data(prefdata,overwrite=TRUE)
+use_data(treecanopy,overwrite=TRUE)
 use_data(pupae,overwrite=TRUE)
 use_data(rain,overwrite=TRUE)
 use_data(sydney_hobart_times,overwrite=TRUE)
-use_data(tibplat,overwrite=TRUE)
 use_data(vessel,overwrite=TRUE)
 use_data(weightloss,overwrite=TRUE)
 use_data(wildmousemetabolism,overwrite=TRUE)
@@ -139,18 +135,16 @@ m <- c(makeOxygen(allometry,print=FALSE),"\n\n",
        makeOxygen(germination_water,print=FALSE),"\n\n",
        makeOxygen(hfeifbytree,print=FALSE),"\n\n",
        makeOxygen(hfeifplotmeans,print=FALSE),"\n\n",
-       makeOxygen(hfeifplotmeans2012,print=FALSE),"\n\n",
        makeOxygen(hfemet2008,print=FALSE),"\n\n",
        makeOxygen(howell,print=FALSE),"\n\n",
        makeOxygen(hydro,print=FALSE),"\n\n",
        makeOxygen(ixfsub,print=FALSE),"\n\n",
        makeOxygen(masslost,print=FALSE),"\n\n",
-       makeOxygen(prefdata,print=FALSE),"\n\n",
+       makeOxygen(treecanopy,print=FALSE),"\n\n",
        makeOxygen(pupae,print=FALSE),"\n\n",
        makeOxygen(rain,print=FALSE),"\n\n",
        makeOxygen(sporecolour,print=FALSE),"\n\n",
        makeOxygen(sydney_hobart_times,print=FALSE),"\n\n",
-       makeOxygen(tibplat,print=FALSE),"\n\n",
        makeOxygen(vessel,print=FALSE),"\n\n",
        makeOxygen(weightloss,print=FALSE),"\n\n",
        makeOxygen(wildmousemetabolism,print=FALSE),"\n\n",

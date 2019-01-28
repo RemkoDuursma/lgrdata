@@ -3,17 +3,19 @@
 \docType{data}
 \name{hydro}
 \alias{hydro}
-\title{DATASET_TITLE}
+\title{Hydro dam storage data}
 \format{A data frame with 314 rows and 2 variables:
 \describe{
-  \item{\code{Date}}{integer COLUMN_DESCRIPTION}
-  \item{\code{storage}}{integer COLUMN_DESCRIPTION}
+  \item{\code{Date}}{factor The date of the bi-weekly reading (d/m/yyyy)}
+  \item{\code{storage}}{integer Total water stored, in energy equivalent ($GWh$).}
 }}
 \usage{
 hydro
 }
 \description{
-DATASET_DESCRIPTION
+This dataset describes the storage of the hydrodam on the
+Derwent river in Tasmania (Lake King William \& Lake St. Clair), in
+equivalent of energy stored.
 }
 \details{
 DETAILS

@@ -3,22 +3,27 @@
 \docType{data}
 \name{pupae}
 \alias{pupae}
-\title{DATASET_TITLE}
+\title{Pupae data}
 \format{A data frame with 84 rows and 5 variables:
 \describe{
-  \item{\code{T_treatment}}{integer COLUMN_DESCRIPTION}
-  \item{\code{CO2_treatment}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Gender}}{integer COLUMN_DESCRIPTION}
-  \item{\code{PupalWeight}}{double COLUMN_DESCRIPTION}
-  \item{\code{Frass}}{double COLUMN_DESCRIPTION}
+  \item{\code{T_treatment}}{integer Temperature treatments ('ambient' and 'elevated')}
+  \item{\code{CO2_treatment}}{integer CO$_2$ treatment (280 or 400 ppm).}
+  \item{\code{Gender}}{integer The gender of the pupae : 0 (male), 1 (female)}
+  \item{\code{PupalWeight}}{double Weight of the pupae ($g$)}
+  \item{\code{Frass}}{double Frass produced ($g$)}
 }}
+\source{
+Data courtesy of Tara Murray, and simplified for the purpose of this book.
+}
 \usage{
 pupae
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+This dataset is from an experiment where larvae were
+left to feed on \emph{Eucalyptus} leaves, in a glasshouse that was
+controlled at two different levels of temperature and CO$_2$ concentration.
+After the larvae pupated (that is, turned into pupae), the body weight
+was measured, as well as the cumulative 'frass' (larvae excrement) over the
+entire time it took to pupate.
 }
 \keyword{datasets}

@@ -3,22 +3,26 @@
 \docType{data}
 \name{hfeifplotmeans}
 \alias{hfeifplotmeans}
-\title{DATASET_TITLE}
+\title{I x F at the HFE - plot-level observations}
 \format{A data frame with 320 rows and 5 variables:
 \describe{
-  \item{\code{plotnr}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Date}}{integer COLUMN_DESCRIPTION}
-  \item{\code{diameter}}{double COLUMN_DESCRIPTION}
-  \item{\code{height}}{double COLUMN_DESCRIPTION}
-  \item{\code{treat}}{integer COLUMN_DESCRIPTION}
+  \item{\code{plotnr}}{integer A total of sixteen plots (four treatments).}
+  \item{\code{Date}}{factor The date of measurement (YYYY-MM-DD)}
+  \item{\code{diameter}}{double Mean diameter for the sample trees ($cm$).}
+  \item{\code{height}}{double Mean height for the sample trees ($m$).}
+  \item{\code{treat}}{integer One of four treatments (I - irrigated, F - dry fertilized, IL - Liquid fertilizer plus irrigation, C - control)}
 }}
 \usage{
 hfeifplotmeans
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+Heights and stem diameters of trees growing in a fertilization x irrigation experiment in
+Richmond, New South Wales, Australia, as part pf the Hawkesbury Forest Experiment (HFE).
+A total of 16 plots, each with 72 Eucalyptus saligna trees, was remeasured 17 times between
+2008 and 2012. Treatments to the plots were either control (C), applied with fertilizer (F),
+irrigation (I), or irrigation+fertilization (IF).
+
+This dataset contains the plot-level means, see \code{\link{hfeifbytree}} for tree-level
+measurements.
 }
 \keyword{datasets}

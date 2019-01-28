@@ -3,29 +3,31 @@
 \docType{data}
 \name{dutchelection}
 \alias{dutchelection}
-\title{DATASET_TITLE}
+\title{Dutch election data}
 \format{A data frame with 22 rows and 12 variables:
 \describe{
-  \item{\code{Date}}{integer COLUMN_DESCRIPTION}
-  \item{\code{VVD}}{double COLUMN_DESCRIPTION}
-  \item{\code{PvdA}}{double COLUMN_DESCRIPTION}
-  \item{\code{PVV}}{double COLUMN_DESCRIPTION}
-  \item{\code{CDA}}{double COLUMN_DESCRIPTION}
-  \item{\code{SP}}{double COLUMN_DESCRIPTION}
-  \item{\code{D66}}{double COLUMN_DESCRIPTION}
-  \item{\code{GL}}{double COLUMN_DESCRIPTION}
-  \item{\code{CU}}{double COLUMN_DESCRIPTION}
-  \item{\code{SGP}}{double COLUMN_DESCRIPTION}
-  \item{\code{PvdD}}{double COLUMN_DESCRIPTION}
-  \item{\code{FiftyPlus}}{double COLUMN_DESCRIPTION}
+  \item{\code{Date}}{factor Date of poll (NOTE: has not been converted to Date class)}
+  \item{\code{VVD}}{double Vote for this part in percentage.}
+  \item{\code{PvdA}}{double Vote for this part in percentage.}
+  \item{\code{PVV}}{double Vote for this part in percentage.}
+  \item{\code{CDA}}{double Vote for this part in percentage.}
+  \item{\code{SP}}{double Vote for this part in percentage.}
+  \item{\code{D66}}{double Vote for this part in percentage.}
+  \item{\code{GL}}{double Vote for this part in percentage.}
+  \item{\code{CU}}{double Vote for this part in percentage.}
+  \item{\code{SGP}}{double Vote for this part in percentage.}
+  \item{\code{PvdD}}{double Vote for this part in percentage.}
+  \item{\code{FiftyPlus}}{double Vote for this part in percentage.}
 }}
+\source{
+<http://en.wikipedia.org/wiki/Dutch_general_election,_2012>
+}
 \usage{
 dutchelection
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+Polls for the 12 leading political parties in the Netherlands,
+leading up to the general election on 12 Sept. 2012. Data are in 'wide' format,
+with a column for each party. Values are in percentages.
 }
 \keyword{datasets}

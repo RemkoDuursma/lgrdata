@@ -284,247 +284,292 @@
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title I x F at the HFE - tree observations
+#' @description
+#' Heights and stem diameters of trees growing in a fertilization x irrigation experiment in
+#' Richmond, New South Wales, Australia, as part pf the Hawkesbury Forest Experiment (HFE).
+#' A total of 16 plots, each with 72 Eucalyptus saligna trees, was remeasured 17 times between
+#' 2008 and 2012. Treatments to the plots were either control (C), applied with fertilizer (F),
+#' irrigation (I), or irrigation+fertilization (IF).
+#'
+#' This dataset contains the tree-level observations, see \code{\link{hfeifplotmeans}} for
+#' averaged data.
+#' @source Data courtesy of Craig Barton and Burhan Amiji, from Western Sydney University.
 #' @format A data frame with 9592 rows and 6 variables:
 #' \describe{
-#'   \item{\code{ID}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{plotnr}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{treat}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Date}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{height}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{diameter}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{ID}}{integer A unique identifier for each tree.}
+#'   \item{\code{plotnr}}{integer A total of sixteen plots (four treatments).}
+#'   \item{\code{treat}}{integer One of four treatments (I - irrigated, F - dry fertilized,
+#'   IL - Liquid fertilizer plus irrigation, C - control)}
+#'   \item{\code{Date}}{factor The date of measurement (YYYY-MM-DD)}
+#'   \item{\code{height}}{double Mean height for the sample trees ($m$).}
+#'   \item{\code{diameter}}{double Mean diameter for the sample trees ($cm$).}
 #'}
-#' @details DETAILS
+#' @examples
+#' # Variable sample sizes over time. On many occassions, subsamples were measured.
+#' data(hfeifbytree)
+#' ftable(xtabs(~Date+treat, data=hfeifbytree))
 "hfeifbytree"
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title I x F at the HFE - plot-level observations
+#' @description Heights and stem diameters of trees growing in a fertilization x irrigation experiment in
+#' Richmond, New South Wales, Australia, as part pf the Hawkesbury Forest Experiment (HFE).
+#' A total of 16 plots, each with 72 Eucalyptus saligna trees, was remeasured 17 times between
+#' 2008 and 2012. Treatments to the plots were either control (C), applied with fertilizer (F),
+#' irrigation (I), or irrigation+fertilization (IF).
+#'
+#' This dataset contains the plot-level means, see \code{\link{hfeifbytree}} for tree-level
+#' measurements.
 #' @format A data frame with 320 rows and 5 variables:
 #' \describe{
-#'   \item{\code{plotnr}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Date}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{diameter}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{height}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{treat}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{plotnr}}{integer A total of sixteen plots (four treatments).}
+#'   \item{\code{Date}}{factor The date of measurement (YYYY-MM-DD)}
+#'   \item{\code{diameter}}{double Mean diameter for the sample trees ($cm$).}
+#'   \item{\code{height}}{double Mean height for the sample trees ($m$).}
+#'   \item{\code{treat}}{integer One of four treatments (I - irrigated, F - dry fertilized, IL - Liquid fertilizer plus irrigation, C - control)}
 #'}
-#' @details DETAILS
 "hfeifplotmeans"
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
-#' @format A data frame with 16 rows and 6 variables:
-#' \describe{
-#'   \item{\code{plotnr}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Date}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{totalvolume}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{diameter}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{height}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{treat}}{integer COLUMN_DESCRIPTION}
-#'}
-#' @details DETAILS
-"hfeifplotmeans2012"
 
-
-
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Weather data at the Hawkesbury Forest Experiment
+#' @description Data for the weather station at the Hawkesbury Forest Experiment (HFE)
+#' for the year 2008. The HFE is in Richmond, New South Wales (in western Sydney), Australia.
+#'
+#' Data are in 30min timestep.
+#' @source Data courtesy of Craig Barton at Western Sydney University.
 #' @format A data frame with 17568 rows and 9 variables:
 #' \describe{
-#'   \item{\code{DateTime}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Tair}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{AirPress}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{RH}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{VPD}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{PAR}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{Rain}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{wind}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{winddirection}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{DateTime}}{integer Date Time (half-hourly steps)}
+#'   \item{\code{Tair}}{double Air temperature (degrees C)}
+#'   \item{\code{AirPress}}{double Air pressure (kPa)}
+#'   \item{\code{RH}}{double Relative humidity (\%)}
+#'   \item{\code{VPD}}{double Vapour pressure deficit (kPa)}
+#'   \item{\code{PAR}}{double Photosynthetically active radiation ($\mu$ mol m$^{-2}$ s$^{-1}$)}
+#'   \item{\code{Rain}}{double Precipitation (mm)}
+#'   \item{\code{wind}}{double Wind speed (m s$^{-1}$)}
+#'   \item{\code{winddirection}}{double Wind direction (degrees)}
 #'}
-#' @details DETAILS
 "hfemet2008"
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Howell height, age and weight data
+#' @description These data were also used by McElreath (2016, "Statistical Rethinking",
+#' CRC Press). Data include measurements of height, age and weight on Khosan people.
+#' @source <https://tspace.library.utoronto.ca/handle/1807/17996>, subsetted for
+#' non-missing data and one outlier removed.
 #' @format A data frame with 783 rows and 4 variables:
 #' \describe{
-#'   \item{\code{sex}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{age}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{weight}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{height}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{sex}}{factor  male or female}
+#'   \item{\code{age}}{double Age (years) }
+#'   \item{\code{weight}}{double Body weight (kg)}
+#'   \item{\code{height}}{double Total height (cm)}
 #'}
-#' @details DETAILS
+#'@examples
+#'data(howell)
+#'with(howell, plot(age, height, pch=19, col=sex))
 "howell"
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Hydro dam storage data
+#' @description This dataset describes the storage of the hydrodam on the
+#' Derwent river in Tasmania (Lake King William \& Lake St. Clair), in
+#' equivalent of energy stored.
 #' @format A data frame with 314 rows and 2 variables:
 #' \describe{
-#'   \item{\code{Date}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{storage}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{Date}}{factor The date of the bi-weekly reading (d/m/yyyy)}
+#'   \item{\code{storage}}{integer Total water stored, in energy equivalent ($GWh$).}
 #'}
 #' @details DETAILS
 "hydro"
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Genetically modified soybean litter decomposition
+#' @description Soybean litter decomposition as a function of time (\code{date}), type of
+#' litter (\code{variety}), herbicides applied (\code{herbicide}), and where in the soil
+#' profile it is placed (\code{profile}). \code{masslost} refers to the proportion of the
+#' litter that was lost from the bag (decomposed) relative to the start of the experiment.
+#' Herbicide treatments were applied at the level of whole plots, with both treatments
+#' represented within each of four blocks. Both levels of variety and profile were each
+#' represented within each plot, with six replicates of each treatment added to each plot.
+#' @source Jeff Powell
 #' @format A data frame with 246 rows and 8 variables:
 #' \describe{
-#'   \item{\code{plot}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{block}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{variety}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{herbicide}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{profile}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{date}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{sample}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{masslost}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{plot}}{integer A total of eight plots.}
+#'   \item{\code{block}}{integer A total of four blocks.}
+#'   \item{\code{variety}}{integer Soybean variety is genetically modified ('gm') or not
+#'   ('nongm'); manipulated at the subplot level.}
+#'   \item{\code{herbicide}}{integer Herbicide applied is glyphosate ('gly') or conventional
+#'   program ('conv'); manipulated at plot level.}
+#'   \item{\code{profile}}{integer Whether litter was 'buried' in the soil or placed at the
+#'   soil 'surface'; manipulated at the subplot level.}
+#'   \item{\code{date}}{integer Date at which litter bags were recovered.}
+#'   \item{\code{sample}}{integer Factor representing timing of sampling ('incrop1',
+#'   'incrop2', 'postharvest').}
+#'   \item{\code{masslost}}{double The proportion of the initial mass that was lost from
+#'   each litter bag during field incubation. Some values are lower than zero due to
+#'   insufficient washing of dirt and biota from litter prior to weighing.}
 #'}
-#' @details DETAILS
 "masslost"
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Tree canopy gradients in the Priest River Experimental Forest (PREF)
+#' @description Leaves of two pine species (35 trees in total) were sampled throughout their canopy, usually 8 samples were
+#' taken at various heights. The height is expressed as the 'distance from top', i.e. the distance to the
+#' apex of the tree. Leaves (conifer needles) were analysed for nitrogen content (narea), and an index
+#' of leaf thickness, the 'leaf mass per area'. The data show the usual pattern of higher leaf thickness
+#' (higher LMA) toward the top of the trees, but individual trees show a lot of variation in LMA.
+#'
+#' @source Marshall, J.D., Monserud, R.A. 2003. Foliage height influences specific
+#' leaf area of three conifer species. Can J For Res 33:164-170
 #' @format A data frame with 249 rows and 7 variables:
 #' \describe{
-#'   \item{\code{ID}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{species}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{dfromtop}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{totheight}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{height}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{LMA}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{narea}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{ID}}{integer ID of the individual tree}
+#'   \item{\code{species}}{integer Pinus ponderosa or Pinus monticola}
+#'   \item{\code{dfromtop}}{double Distance from top of tree (where leaf sample was taken) (m)}
+#'   \item{\code{totheight}}{double Total height of the tree (m)}
+#'   \item{\code{height}}{double Height from the ground (where sample was taken) (m)}
+#'   \item{\code{LMA}}{double Leaf mass per area (g m$^{-2}$)}
+#'   \item{\code{narea}}{double Nitrogen per area (gN m$^{-2}$)}
 #'}
-#' @details DETAILS
-"prefdata"
+#'@examples
+#'data(prefdata)
+#'if(require(ggplot2)){
+#'  ggplot(prefdata, aes(dfromtop,LMA,group=ID,col=species)) +
+#'    geom_point() +
+#'    stat_smooth(method="lm",se=F) +
+#'    theme_minimal()
+#'}
+"treecanopy"
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Pupae data
+#' @description This dataset is from an experiment where larvae were
+#' left to feed on \emph{Eucalyptus} leaves, in a glasshouse that was
+#' controlled at two different levels of temperature and CO$_2$ concentration.
+#' After the larvae pupated (that is, turned into pupae), the body weight
+#' was measured, as well as the cumulative 'frass' (larvae excrement) over the
+#' entire time it took to pupate.
+#' @source Data courtesy of Tara Murray, and simplified for the purpose of this book.
 #' @format A data frame with 84 rows and 5 variables:
 #' \describe{
-#'   \item{\code{T_treatment}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{CO2_treatment}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Gender}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{PupalWeight}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{Frass}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{T_treatment}}{integer Temperature treatments ('ambient' and 'elevated')}
+#'   \item{\code{CO2_treatment}}{integer CO$_2$ treatment (280 or 400 ppm).}
+#'   \item{\code{Gender}}{integer The gender of the pupae : 0 (male), 1 (female)}
+#'   \item{\code{PupalWeight}}{double Weight of the pupae ($g$)}
+#'   \item{\code{Frass}}{double Frass produced ($g$)}
 #'}
-#' @details DETAILS
 "pupae"
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Rain data
+#' @description This dataset contains ten years (1995-2006) of daily rainfall
+#' amounts as measured at the Richmond RAAF base.
+#' @source <http://www.bom.gov.au/climate/data/>, simplified and adjusted for this package.
 #' @format A data frame with 3653 rows and 3 variables:
 #' \describe{
-#'   \item{\code{Year}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{DOY}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Rain}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{Year}}{integer Year}
+#'   \item{\code{DOY}}{integer Day of year (1-366)}
+#'   \item{\code{Rain}}{double Daily rainfall amount (mm)}
 #'}
-#' @details DETAILS
 "rain"
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Sydney to Hobart winning times
+#' @description Winning times for the Sydney to Hobart Yacht Race. An annual sail yacht race over
+#' 1170km, from Sydney's harbour, to Hobart in Tasmania. The race is infamous for the rough conditions,
+#' long distance, and large number of dropouts in some years. The data include the winning time, and
+#' the number of starting yachts, and the number of yachts reaching the finish.
+#' @source <https://en.wikipedia.org/wiki/Sydney_to_Hobart_Yacht_Race>
 #' @format A data frame with 72 rows and 5 variables:
 #' \describe{
-#'   \item{\code{Year}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Time}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{fleet_start}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{fleet_finish}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Time_record}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{Year}}{integer Year race was held}
+#'   \item{\code{Time}}{double Total time (days)}
+#'   \item{\code{fleet_start}}{integer Number yachts at start}
+#'   \item{\code{fleet_finish}}{integer Number yachts at finish}
+#'   \item{\code{Time_record}}{double Record race up to this year}
 #'}
-#' @details DETAILS
+#' @examples
+#' data(sydney_hobart_times)
+#' with(sydney_hobart_times, {
+#'     plot(Year, Time)
+#'     lines(Year, Time_record, type='s', col="red")
+#' })
+#'
 "sydney_hobart_times"
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
-#' @format A data frame with 32 rows and 10 variables:
-#' \describe{
-#'   \item{\code{fertilization}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{enclosure}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{elymus_nutans}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{poa_crymophila}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{kobresia_setchwanensis}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{anemone_rivularis}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{potentilla_fragarioides}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{stipa_aliena}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{astragalus_polycladus}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{anemone_obtusiloba}}{double COLUMN_DESCRIPTION}
-#'}
-#' @details DETAILS
-"tibplat"
-
-
-
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Xylem vessel diameters
+#' @description Measurements of diameters of xylem (wood) vessels
+#' on a single \emph{Eucalyptus saligna} tree grown at the
+#' Hawkesbury Forest Experiment.
+#' @source Sebastian Pfautsch
 #' @format A data frame with 550 rows and 3 variables:
 #' \describe{
-#'   \item{\code{position}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{imagenr}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{vesseldiam}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{position}}{integer Either 'base' or 'apex' :
+#'   the tree was sampled at stem base and near the top of the tree.}
+#'   \item{\code{imagenr}}{integer At the stem base, six images were
+#'   analyzed (and all vessels measured in that image). At apex, three images.}
+#'   \item{\code{vesseldiam}}{double Diameter of individual water-conducting vessels ($\mu$ m).}
 #'}
-#' @details DETAILS
 "vessel"
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Weight loss data
+#' @description This dataset contains measurements of a Jeremy Zawodny
+#' over a period of about 3 months while he was trying to lose weight.
+#' This is an example of an irregular timeseries dataset (intervals
+#' between measurements vary).
+#' @source <http://jeremy.zawodny.com/blog/archives/006851.html>
 #' @format A data frame with 67 rows and 2 variables:
 #' \describe{
-#'   \item{\code{Date}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Weight}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{Date}}{factor Date, d/m/yy}
+#'   \item{\code{Weight}}{double Weight, in pounds}
 #'}
-#' @details DETAILS
 "weightloss"
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Mouse metabolism
+#' @description Wild mice were placed in a device where the metabolic rate (energy used by the animal)
+#' can be measured directly, and continuously. Measurements were made at varying temperature (15, 20 and 31C),
+#' mice were provided with food or not, and were able to exercise (with a treadmill) or not.
+#' @source Christopher Turbill
 #' @format A data frame with 864 rows and 9 variables:
 #' \describe{
-#'   \item{\code{id}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{run}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{day}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{temp}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{food}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{bm}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{wheel}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{rmr}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{sex}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{id}}{integer Individual number}
+#'   \item{\code{run}}{integer The experiment was repeated three times (run = 1,2,3)}
+#'   \item{\code{day}}{integer Day of experiment (1-6)}
+#'   \item{\code{temp}}{integer Temperature (deg C)}
+#'   \item{\code{food}}{integer Whether food was provided ('Yes') or not ('No')}
+#'   \item{\code{bm}}{double Body mass (g)}
+#'   \item{\code{wheel}}{integer Whether the mouse could use an exercise wheel ('Yes') or not ('No')}
+#'   \item{\code{rmr}}{double Resting metabolic rate (minimum rate of a running average over 12min) (kC hour-1)}
+#'   \item{\code{sex}}{integer Male or Female}
 #'}
-#' @details DETAILS
 "wildmousemetabolism"
 
-
-
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title A Baboon Named Brunhilda
+#' @description The observed responses are Geiger counter counts (times 10-4) used
+#' to measure the amount of radioactively tagged sulfate drug
+#' in the blood of a baboon named Brunhilda after an injection of the drug.
+#' @source <http://www.statsci.org/data/general/brunhild.html>
 #' @format A data frame with 21 rows and 2 variables:
 #' \describe{
-#'   \item{\code{Hours}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Sulfate}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{Hours}}{integer Hours after drug injection}
+#'   \item{\code{Sulfate}}{double Tagged sulfate concentration in blood}
 #'}
-#' @details DETAILS
 "brunhild"
 
 
@@ -600,15 +645,19 @@
 
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Passengers on the Titanic
+#' @description Survival status of passengers on the Titanic,
+#' together with their names, age, sex and passenger class. Not to be confused with
+#' the dataset \code{\link{Titanic}}, provided with R, which lists only tables of passengers.
+#' This dataset on the other hand provides one row per passenger.
+#' @source <http://www.statsci.org/data/general/titanic.html>
 #' @format A data frame with 1313 rows and 5 variables:
 #' \describe{
-#'   \item{\code{Name}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{PClass}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Age}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{Sex}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Survived}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{Name}}{integer Recorded name of passenger}
+#'   \item{\code{PClass}}{integer Passenger class: 1st, 2nd or 3rd}
+#'   \item{\code{Age}}{double Age in years (many missing)}
+#'   \item{\code{Sex}}{integer male or female}
+#'   \item{\code{Survived}}{integer 1 = Yes, 0 = No}
 #'}
 #' @details DETAILS
 "titanic"

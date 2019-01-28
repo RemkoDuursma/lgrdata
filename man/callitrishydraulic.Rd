@@ -3,20 +3,25 @@
 \docType{data}
 \name{callitrishydraulic}
 \alias{callitrishydraulic}
-\title{DATASET_TITLE}
+\title{Cavitation resistance for Callitris branches}
 \format{A data frame with 31 rows and 3 variables:
 \describe{
-  \item{\code{Rep}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Psi}}{double COLUMN_DESCRIPTION}
-  \item{\code{PLC}}{double COLUMN_DESCRIPTION}
+  \item{\code{Rep}}{integer Replicate - four branches are included.}
+  \item{\code{Psi}}{double Positive-valued negative xylem water pressure (MPa)}
+  \item{\code{PLC}}{double Percent loss conductivity (sometimes < 0)}
 }}
 \usage{
 callitrishydraulic
 }
 \description{
-DATASET_DESCRIPTION
+Measurements of so-called 'percent loss conductivity' (PLC) curves on terminal
+twigs of Callitris trees (a member of the Cupressaceae in Australia). Twigs are subjected to
+increasingly negative xylem pressure (Psi, included as a positive pressure in MPa), and the loss
+in conductivity (i.e. the conductivity of water transport in the xylem) is measured.
 }
-\details{
-DETAILS
+\examples{
+data(callitrishydraulic)
+with(callitrishydraulic, plot(Psi, PLC, pch=Rep))
+
 }
 \keyword{datasets}

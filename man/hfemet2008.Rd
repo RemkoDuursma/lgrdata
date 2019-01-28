@@ -3,26 +3,29 @@
 \docType{data}
 \name{hfemet2008}
 \alias{hfemet2008}
-\title{DATASET_TITLE}
+\title{Weather data at the Hawkesbury Forest Experiment}
 \format{A data frame with 17568 rows and 9 variables:
 \describe{
-  \item{\code{DateTime}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Tair}}{double COLUMN_DESCRIPTION}
-  \item{\code{AirPress}}{double COLUMN_DESCRIPTION}
-  \item{\code{RH}}{double COLUMN_DESCRIPTION}
-  \item{\code{VPD}}{double COLUMN_DESCRIPTION}
-  \item{\code{PAR}}{double COLUMN_DESCRIPTION}
-  \item{\code{Rain}}{double COLUMN_DESCRIPTION}
-  \item{\code{wind}}{double COLUMN_DESCRIPTION}
-  \item{\code{winddirection}}{double COLUMN_DESCRIPTION}
+  \item{\code{DateTime}}{integer Date Time (half-hourly steps)}
+  \item{\code{Tair}}{double Air temperature (degrees C)}
+  \item{\code{AirPress}}{double Air pressure (kPa)}
+  \item{\code{RH}}{double Relative humidity (\%)}
+  \item{\code{VPD}}{double Vapour pressure deficit (kPa)}
+  \item{\code{PAR}}{double Photosynthetically active radiation ($\mu$ mol m$^{-2}$ s$^{-1}$)}
+  \item{\code{Rain}}{double Precipitation (mm)}
+  \item{\code{wind}}{double Wind speed (m s$^{-1}$)}
+  \item{\code{winddirection}}{double Wind direction (degrees)}
 }}
+\source{
+Data courtesy of Craig Barton at Western Sydney University.
+}
 \usage{
 hfemet2008
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+Data for the weather station at the Hawkesbury Forest Experiment (HFE)
+for the year 2008. The HFE is in Richmond, New South Wales (in western Sydney), Australia.
+
+Data are in 30min timestep.
 }
 \keyword{datasets}

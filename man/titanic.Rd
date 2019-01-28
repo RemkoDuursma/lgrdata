@@ -3,20 +3,26 @@
 \docType{data}
 \name{titanic}
 \alias{titanic}
-\title{DATASET_TITLE}
+\title{Passengers on the Titanic}
 \format{A data frame with 1313 rows and 5 variables:
 \describe{
-  \item{\code{Name}}{integer COLUMN_DESCRIPTION}
-  \item{\code{PClass}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Age}}{double COLUMN_DESCRIPTION}
-  \item{\code{Sex}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Survived}}{integer COLUMN_DESCRIPTION}
+  \item{\code{Name}}{integer Recorded name of passenger}
+  \item{\code{PClass}}{integer Passenger class: 1st, 2nd or 3rd}
+  \item{\code{Age}}{double Age in years (many missing)}
+  \item{\code{Sex}}{integer male or female}
+  \item{\code{Survived}}{integer 1 = Yes, 0 = No}
 }}
+\source{
+<http://www.statsci.org/data/general/titanic.html>
+}
 \usage{
 titanic
 }
 \description{
-DATASET_DESCRIPTION
+Survival status of passengers on the Titanic,
+together with their names, age, sex and passenger class. Not to be confused with
+the dataset \code{\link{Titanic}}, provided with R, which lists only tables of passengers.
+This dataset on the other hand provides one row per passenger.
 }
 \details{
 DETAILS

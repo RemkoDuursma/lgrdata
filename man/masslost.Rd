@@ -3,25 +3,37 @@
 \docType{data}
 \name{masslost}
 \alias{masslost}
-\title{DATASET_TITLE}
+\title{Genetically modified soybean litter decomposition}
 \format{A data frame with 246 rows and 8 variables:
 \describe{
-  \item{\code{plot}}{integer COLUMN_DESCRIPTION}
-  \item{\code{block}}{integer COLUMN_DESCRIPTION}
-  \item{\code{variety}}{integer COLUMN_DESCRIPTION}
-  \item{\code{herbicide}}{integer COLUMN_DESCRIPTION}
-  \item{\code{profile}}{integer COLUMN_DESCRIPTION}
-  \item{\code{date}}{integer COLUMN_DESCRIPTION}
-  \item{\code{sample}}{integer COLUMN_DESCRIPTION}
-  \item{\code{masslost}}{double COLUMN_DESCRIPTION}
+  \item{\code{plot}}{integer A total of eight plots.}
+  \item{\code{block}}{integer A total of four blocks.}
+  \item{\code{variety}}{integer Soybean variety is genetically modified ('gm') or not
+  ('nongm'); manipulated at the subplot level.}
+  \item{\code{herbicide}}{integer Herbicide applied is glyphosate ('gly') or conventional
+  program ('conv'); manipulated at plot level.}
+  \item{\code{profile}}{integer Whether litter was 'buried' in the soil or placed at the
+  soil 'surface'; manipulated at the subplot level.}
+  \item{\code{date}}{integer Date at which litter bags were recovered.}
+  \item{\code{sample}}{integer Factor representing timing of sampling ('incrop1',
+  'incrop2', 'postharvest').}
+  \item{\code{masslost}}{double The proportion of the initial mass that was lost from
+  each litter bag during field incubation. Some values are lower than zero due to
+  insufficient washing of dirt and biota from litter prior to weighing.}
 }}
+\source{
+Jeff Powell
+}
 \usage{
 masslost
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+Soybean litter decomposition as a function of time (\code{date}), type of
+litter (\code{variety}), herbicides applied (\code{herbicide}), and where in the soil
+profile it is placed (\code{profile}). \code{masslost} refers to the proportion of the
+litter that was lost from the bag (decomposed) relative to the start of the experiment.
+Herbicide treatments were applied at the level of whole plots, with both treatments
+represented within each of four blocks. Both levels of variety and profile were each
+represented within each plot, with six replicates of each treatment added to each plot.
 }
 \keyword{datasets}

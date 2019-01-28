@@ -3,26 +3,28 @@
 \docType{data}
 \name{wildmousemetabolism}
 \alias{wildmousemetabolism}
-\title{DATASET_TITLE}
+\title{Mouse metabolism}
 \format{A data frame with 864 rows and 9 variables:
 \describe{
-  \item{\code{id}}{integer COLUMN_DESCRIPTION}
-  \item{\code{run}}{integer COLUMN_DESCRIPTION}
-  \item{\code{day}}{integer COLUMN_DESCRIPTION}
-  \item{\code{temp}}{integer COLUMN_DESCRIPTION}
-  \item{\code{food}}{integer COLUMN_DESCRIPTION}
-  \item{\code{bm}}{double COLUMN_DESCRIPTION}
-  \item{\code{wheel}}{integer COLUMN_DESCRIPTION}
-  \item{\code{rmr}}{double COLUMN_DESCRIPTION}
-  \item{\code{sex}}{integer COLUMN_DESCRIPTION}
+  \item{\code{id}}{integer Individual number}
+  \item{\code{run}}{integer The experiment was repeated three times (run = 1,2,3)}
+  \item{\code{day}}{integer Day of experiment (1-6)}
+  \item{\code{temp}}{integer Temperature (deg C)}
+  \item{\code{food}}{integer Whether food was provided ('Yes') or not ('No')}
+  \item{\code{bm}}{double Body mass (g)}
+  \item{\code{wheel}}{integer Whether the mouse could use an exercise wheel ('Yes') or not ('No')}
+  \item{\code{rmr}}{double Resting metabolic rate (minimum rate of a running average over 12min) (kC hour-1)}
+  \item{\code{sex}}{integer Male or Female}
 }}
+\source{
+Christopher Turbill
+}
 \usage{
 wildmousemetabolism
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+Wild mice were placed in a device where the metabolic rate (energy used by the animal)
+can be measured directly, and continuously. Measurements were made at varying temperature (15, 20 and 31C),
+mice were provided with food or not, and were able to exercise (with a treadmill) or not.
 }
 \keyword{datasets}

@@ -3,20 +3,21 @@
 \docType{data}
 \name{rain}
 \alias{rain}
-\title{DATASET_TITLE}
+\title{Rain data}
 \format{A data frame with 3653 rows and 3 variables:
 \describe{
-  \item{\code{Year}}{integer COLUMN_DESCRIPTION}
-  \item{\code{DOY}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Rain}}{double COLUMN_DESCRIPTION}
+  \item{\code{Year}}{integer Year}
+  \item{\code{DOY}}{integer Day of year (1-366)}
+  \item{\code{Rain}}{double Daily rainfall amount (mm)}
 }}
+\source{
+<http://www.bom.gov.au/climate/data/>, simplified and adjusted for this package.
+}
 \usage{
 rain
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+This dataset contains ten years (1995-2006) of daily rainfall
+amounts as measured at the Richmond RAAF base.
 }
 \keyword{datasets}

@@ -3,24 +3,34 @@
 \docType{data}
 \name{germination_fire}
 \alias{germination_fire}
-\title{DATASET_TITLE}
+\title{Seed germination as affected by fire}
 \format{A data frame with 576 rows and 7 variables:
 \describe{
-  \item{\code{species}}{integer COLUMN_DESCRIPTION}
-  \item{\code{temp}}{integer COLUMN_DESCRIPTION}
-  \item{\code{fire.cues}}{integer COLUMN_DESCRIPTION}
-  \item{\code{site}}{integer COLUMN_DESCRIPTION}
-  \item{\code{cabinet}}{integer COLUMN_DESCRIPTION}
-  \item{\code{germ}}{integer COLUMN_DESCRIPTION}
-  \item{\code{n}}{integer COLUMN_DESCRIPTION}
+  \item{\code{species}}{factor One of four Melaleuca species}
+  \item{\code{temp}}{integer Temperature treatment (C)}
+  \item{\code{fire.cues}}{integer Fire cue treatment (yes or no)}
+  \item{\code{site}}{integer Coding for the site where the seed was collected}
+  \item{\code{cabinet}}{integer ID for the cabinet where seeds were treated}
+  \item{\code{germ}}{integer Number of germinated seeds}
+  \item{\code{n}}{integer Number of seeds tested (20 for all rows)}
 }}
+\source{
+Data are from Hewitt et al. 2015 (Austral Ecology 40(6):661-671), shared by Charles Morris,
+and simplified for the purpose of this book.
+}
 \usage{
 germination_fire
 }
 \description{
-DATASET_DESCRIPTION
+Two datasets on the germination success of seeds of four \emph{Melaleuca}
+species, when subjected to temperature, fire cue, and dehydration treatments. Seeds were
+collected from a number of sites and subjected to 6 temperature treatments and fire cues
+(in the fire germination data), or two a range of dehydration levels (in the water germination
+data).
+
+This dataset contains the fire treatment data.
 }
-\details{
-DETAILS
+\seealso{
+\code{\link{}}
 }
 \keyword{datasets}

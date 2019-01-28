@@ -3,21 +3,26 @@
 \docType{data}
 \name{howell}
 \alias{howell}
-\title{DATASET_TITLE}
+\title{Howell height, age and weight data}
 \format{A data frame with 783 rows and 4 variables:
 \describe{
-  \item{\code{sex}}{integer COLUMN_DESCRIPTION}
-  \item{\code{age}}{double COLUMN_DESCRIPTION}
-  \item{\code{weight}}{double COLUMN_DESCRIPTION}
-  \item{\code{height}}{double COLUMN_DESCRIPTION}
+  \item{\code{sex}}{factor  male or female}
+  \item{\code{age}}{double Age (years) }
+  \item{\code{weight}}{double Body weight (kg)}
+  \item{\code{height}}{double Total height (cm)}
 }}
+\source{
+<https://tspace.library.utoronto.ca/handle/1807/17996>, subsetted for
+non-missing data and one outlier removed.
+}
 \usage{
 howell
 }
 \description{
-DATASET_DESCRIPTION
+These data were also used by McElreath (2016, "Statistical Rethinking",
+CRC Press). Data include measurements of height, age and weight on Khosan people.
 }
-\details{
-DETAILS
+\examples{
+with(howell, plot(age, height, pch=19, col=sex))
 }
 \keyword{datasets}

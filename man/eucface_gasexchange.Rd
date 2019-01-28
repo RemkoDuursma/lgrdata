@@ -3,24 +3,27 @@
 \docType{data}
 \name{eucface_gasexchange}
 \alias{eucface_gasexchange}
-\title{DATASET_TITLE}
+\title{Leaf gas exchange at the EucFACE}
 \format{A data frame with 84 rows and 7 variables:
 \describe{
-  \item{\code{Date}}{integer COLUMN_DESCRIPTION}
-  \item{\code{CO2}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Ring}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Tree}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Photo}}{double COLUMN_DESCRIPTION}
-  \item{\code{Trmmol}}{double COLUMN_DESCRIPTION}
-  \item{\code{VpdL}}{double COLUMN_DESCRIPTION}
+  \item{\code{Date}}{factor Date label (A-D)}
+  \item{\code{CO2}}{integer CO2 treatment, Amb=ambient, Ele=elevated}
+  \item{\code{Ring}}{integer One of six plots ('rings') where treatment was applied}
+  \item{\code{Tree}}{integer Tree number}
+  \item{\code{Photo}}{double Rate of leaf photosynthesis (mu mol m-2 s-1)}
+  \item{\code{Trmmol}}{double Rate of leaf transpiration (mmol m-2 s-1)}
+  \item{\code{VpdL}}{double Vapour pressure deficit (kPa)}
 }}
+\source{
+Gimeno T.E., 2015, Conserved stomatal behaviour under elevated CO2 and varying
+water availability in a mature woodland. Functional Ecology <https://doi.org/10.1111/1365-2435.12532>
+}
 \usage{
 eucface_gasexchange
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+Measurements of leaf net photosynthesis at the EucFACE experiment,
+on leaves of different trees growing in ambient and elevated CO$_2$ concentrations.
+Measurements were repeated four times during 2013 (labelled as Date=A,B,C,D).
 }
 \keyword{datasets}

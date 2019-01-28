@@ -3,30 +3,32 @@
 \docType{data}
 \name{cereals}
 \alias{cereals}
-\title{DATASET_TITLE}
+\title{Cereal nutrition data}
 \format{A data frame with 77 rows and 13 variables:
 \describe{
-  \item{\code{Cereal.name}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Manufacturer}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Cold.or.Hot}}{integer COLUMN_DESCRIPTION}
-  \item{\code{calories}}{integer COLUMN_DESCRIPTION}
-  \item{\code{protein}}{integer COLUMN_DESCRIPTION}
-  \item{\code{fat}}{integer COLUMN_DESCRIPTION}
-  \item{\code{sodium}}{integer COLUMN_DESCRIPTION}
-  \item{\code{fiber}}{double COLUMN_DESCRIPTION}
-  \item{\code{carbo}}{double COLUMN_DESCRIPTION}
-  \item{\code{sugars}}{integer COLUMN_DESCRIPTION}
-  \item{\code{potass}}{integer COLUMN_DESCRIPTION}
-  \item{\code{vitamins}}{integer COLUMN_DESCRIPTION}
-  \item{\code{rating}}{double COLUMN_DESCRIPTION}
+  \item{\code{Cereal.name}}{character Cereal name}
+  \item{\code{Manufacturer}}{factor Cereal manufacturer (letter code)}
+  \item{\code{Cold.or.Hot}}{factor 'C' or 'H'}
+  \item{\code{calories}}{integer}
+  \item{\code{protein}}{integer}
+  \item{\code{fat}}{integer}
+  \item{\code{sodium}}{integer}
+  \item{\code{fiber}}{double}
+  \item{\code{carbo}}{double}
+  \item{\code{sugars}}{integer}
+  \item{\code{potass}}{integer}
+  \item{\code{vitamins}}{integer}
+  \item{\code{rating}}{double Health rating of the cereal (unknown calculation method).}
 }}
+\source{
+<https://dasl.datadescription.com/datafile/cereals/> (Originally at Statlib CMU).
+}
 \usage{
 cereals
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+This dataset summarizes 77 different brands of breakfast cereals,
+including calories, proteins, fats, and so on, and gives a 'rating' that indicates the
+overall nutritional value of the cereal.
 }
 \keyword{datasets}

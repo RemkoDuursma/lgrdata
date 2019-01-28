@@ -6,15 +6,18 @@
 \title{Allometry}
 \format{A data frame with 63 rows and 5 variables:
 \describe{
-  \item{\code{species}}{integer COLUMN_DESCRIPTION}
-  \item{\code{diameter}}{double COLUMN_DESCRIPTION}
-  \item{\code{height}}{double COLUMN_DESCRIPTION}
-  \item{\code{leafarea}}{double COLUMN_DESCRIPTION}
-  \item{\code{branchmass}}{double COLUMN_DESCRIPTION}
+  \item{\code{species}}{factor The tree species (PSME = Douglas fir, PIMO =
+  Western white pine, PIPO = Ponderosa pine).}
+  \item{\code{diameter}}{double Tree diameter at 1.3m above ground (cm).}
+  \item{\code{height}}{double Tree height (m).}
+  \item{\code{leafarea}}{double Total leaf area (m2)}
+  \item{\code{branchmass}}{double Total (oven-dry) mass of branches (kg).}
 }}
+\usage{
+allometry
+}
 \description{
-DATASET_DESCRIPTION
+This dataset contains measurements of tree dimensions and biomass.
+Data kindly provided by John Marshall, University of Idaho.
 }
-\details{
-DETAILS
-}
+\keyword{datasets}

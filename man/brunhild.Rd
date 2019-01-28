@@ -3,19 +3,21 @@
 \docType{data}
 \name{brunhild}
 \alias{brunhild}
-\title{DATASET_TITLE}
+\title{A Baboon Named Brunhilda}
 \format{A data frame with 21 rows and 2 variables:
 \describe{
-  \item{\code{Hours}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Sulfate}}{double COLUMN_DESCRIPTION}
+  \item{\code{Hours}}{integer Hours after drug injection}
+  \item{\code{Sulfate}}{double Tagged sulfate concentration in blood}
 }}
+\source{
+<http://www.statsci.org/data/general/brunhild.html>
+}
 \usage{
 brunhild
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+The observed responses are Geiger counter counts (times 10-4) used
+to measure the amount of radioactively tagged sulfate drug
+in the blood of a baboon named Brunhilda after an injection of the drug.
 }
 \keyword{datasets}

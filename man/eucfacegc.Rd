@@ -3,25 +3,30 @@
 \docType{data}
 \name{eucfacegc}
 \alias{eucfacegc}
-\title{DATASET_TITLE}
+\title{EucFACE ground cover data}
 \format{A data frame with 192 rows and 8 variables:
 \describe{
-  \item{\code{Date}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Ring}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Plot}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Sub}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Forbes}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Grass}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Litter}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Trt}}{integer COLUMN_DESCRIPTION}
+  \item{\code{Date}}{integer Date of measurement (d/m/y, not yet converted to Date class)}
+  \item{\code{Ring}}{integer The identity of the EucFACE Ring, the level at which the
+  experimental treatment is applied.}
+  \item{\code{Plot}}{integer A total of four plots, nested within each level of Ring.}
+  \item{\code{Sub}}{integer A total of four subplots, nested within each level of Plot.}
+  \item{\code{Forbes}}{integer Number of points where dicot plants are observed.}
+  \item{\code{Grass}}{integer Number of points where grass is observed.}
+  \item{\code{Litter}}{integer Number of points where leaf litter is observed.}
+  \item{\code{Trt}}{integer The experimental treatment: \code{ctrl} for ambient levels of atmospheric
+  carbon dioxide, \code{elev} for ambient plus 150ppm.}
 }}
+\source{
+Jeff Powell
+}
 \usage{
 eucfacegc
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+This file contains estimates of plant and litter cover within the rings of the
+EucFACE experiment, evaluating forest ecosystem responses to elevated CO$_2$, on two dates.
+Within each ring are four plots and within each plot are four 1m by 1m subplots. Values
+represent counts along a grid of 16 points within each subplot.
 }
 \keyword{datasets}

@@ -3,24 +3,28 @@
 \docType{data}
 \name{coweeta}
 \alias{coweeta}
-\title{DATASET_TITLE}
+\title{Coweeta tree data}
 \format{A data frame with 87 rows and 9 variables:
 \describe{
-  \item{\code{species}}{integer COLUMN_DESCRIPTION}
-  \item{\code{site}}{integer COLUMN_DESCRIPTION}
-  \item{\code{elev}}{integer COLUMN_DESCRIPTION}
-  \item{\code{age}}{integer COLUMN_DESCRIPTION}
-  \item{\code{DBH}}{double COLUMN_DESCRIPTION}
-  \item{\code{height}}{double COLUMN_DESCRIPTION}
-  \item{\code{folmass}}{double COLUMN_DESCRIPTION}
-  \item{\code{SLA}}{double COLUMN_DESCRIPTION}
-  \item{\code{biomass}}{double COLUMN_DESCRIPTION}
+  \item{\code{species}}{integer One of 10 tree species}
+  \item{\code{site}}{integer Site abbreviation}
+  \item{\code{elev}}{integer Elevation (m asl)}
+  \item{\code{age}}{integer Tree age (yr)}
+  \item{\code{DBH}}{double Diameter at breast height (cm)}
+  \item{\code{height}}{double Tree height (m)}
+  \item{\code{folmass}}{double Foliage mass (kg)}
+  \item{\code{SLA}}{double Specific leaf area (index of leaf thinness) (cm2 g-1)}
+  \item{\code{biomass}}{double Total tree biomass}
 }}
+\source{
+Martin J.G., et al., 1998, Aboveground biomass and nitrogen allocation of ten deciduous
+southern Appalachian tree species, Canadian Journal of Forest Research 28, 1648-1659.
+}
 \usage{
 coweeta
 }
 \description{
-DATASET_DESCRIPTION
+Tree measurements in the Coweeta LTER.
 }
 \details{
 DETAILS

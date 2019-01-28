@@ -3,22 +3,32 @@
 \docType{data}
 \name{sydney_hobart_times}
 \alias{sydney_hobart_times}
-\title{DATASET_TITLE}
+\title{Sydney to Hobart winning times}
 \format{A data frame with 72 rows and 5 variables:
 \describe{
-  \item{\code{Year}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Time}}{double COLUMN_DESCRIPTION}
-  \item{\code{fleet_start}}{integer COLUMN_DESCRIPTION}
-  \item{\code{fleet_finish}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Time_record}}{double COLUMN_DESCRIPTION}
+  \item{\code{Year}}{integer Year race was held}
+  \item{\code{Time}}{double Total time (days)}
+  \item{\code{fleet_start}}{integer Number yachts at start}
+  \item{\code{fleet_finish}}{integer Number yachts at finish}
+  \item{\code{Time_record}}{double Record race up to this year}
 }}
+\source{
+<https://en.wikipedia.org/wiki/Sydney_to_Hobart_Yacht_Race>
+}
 \usage{
 sydney_hobart_times
 }
 \description{
-DATASET_DESCRIPTION
+Winning times for the Sydney to Hobart Yacht Race. An annual sail yacht race over
+1170km, from Sydney's harbour, to Hobart in Tasmania. The race is infamous for the rough conditions,
+long distance, and large number of dropouts in some years. The data include the winning time, and
+the number of starting yachts, and the number of yachts reaching the finish.
 }
-\details{
-DETAILS
+\examples{
+with(sydney_hobart_times, {
+    plot(Year, Time)
+    lines(Year, Time_record, type='s', col="red")
+})
+
 }
 \keyword{datasets}

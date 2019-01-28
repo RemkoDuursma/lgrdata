@@ -3,19 +3,22 @@
 \docType{data}
 \name{weightloss}
 \alias{weightloss}
-\title{DATASET_TITLE}
+\title{Weight loss data}
 \format{A data frame with 67 rows and 2 variables:
 \describe{
-  \item{\code{Date}}{integer COLUMN_DESCRIPTION}
-  \item{\code{Weight}}{double COLUMN_DESCRIPTION}
+  \item{\code{Date}}{factor Date, d/m/yy}
+  \item{\code{Weight}}{double Weight, in pounds}
 }}
+\source{
+<http://jeremy.zawodny.com/blog/archives/006851.html>
+}
 \usage{
 weightloss
 }
 \description{
-DATASET_DESCRIPTION
-}
-\details{
-DETAILS
+This dataset contains measurements of a Jeremy Zawodny
+over a period of about 3 months while he was trying to lose weight.
+This is an example of an irregular timeseries dataset (intervals
+between measurements vary).
 }
 \keyword{datasets}

@@ -3,17 +3,26 @@
 \docType{data}
 \name{anthropometry}
 \alias{anthropometry}
-\title{DATASET_TITLE}
+\title{Child anthropometry}
 \format{A data frame with 3898 rows and 4 variables:
 \describe{
-  \item{\code{age}}{double COLUMN_DESCRIPTION}
-  \item{\code{gender}}{integer COLUMN_DESCRIPTION}
-  \item{\code{foot_length}}{integer COLUMN_DESCRIPTION}
-  \item{\code{height}}{double COLUMN_DESCRIPTION}
+  \item{\code{age}}{double Age in years}
+  \item{\code{gender}}{integer "female" or "male"}
+  \item{\code{foot_length}}{integer Total foot length (mm)}
+  \item{\code{height}}{double Total height (cm)}
 }}
+\source{
+<http://mreed.umtri.umich.edu/mreed/downloads.html>.
+}
+\usage{
+anthropometry
+}
 \description{
-DATASET_DESCRIPTION
+Data include measurements of age, foot length, and height for
+3898 children. These data are a small subset of many dozens of measurements on
+the same children, described in detail by Snyder (1977).
 }
 \details{
 DETAILS
 }
+\keyword{datasets}
