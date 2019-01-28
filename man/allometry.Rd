@@ -20,4 +20,8 @@ allometry
 This dataset contains measurements of tree dimensions and biomass.
 Data kindly provided by John Marshall, University of Idaho.
 }
+\examples{
+data(allometry)
+with(allometry, plot(diameter, height, pch=19, col=species))
+}
 \keyword{datasets}

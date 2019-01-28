@@ -10,6 +10,9 @@
 #'   \item{\code{leafarea}}{double Total leaf area (m2)}
 #'   \item{\code{branchmass}}{double Total (oven-dry) mass of branches (kg).}
 #'}
+#'@examples
+#'data(allometry)
+#'with(allometry, plot(diameter, height, pch=19, col=species))
 "allometry"
 
 
@@ -28,7 +31,9 @@
 #'   \item{\code{foot_length}}{integer Total foot length (mm)}
 #'   \item{\code{height}}{double Total height (cm)}
 #'}
-#' @details DETAILS
+#' @examples
+#' data(anthropometry)
+#' with(anthropometry, plot(age, foot_length, pch=16, cex=0.5, col=gender))
 "anthropometry"
 
 

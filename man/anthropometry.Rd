@@ -22,7 +22,8 @@ Data include measurements of age, foot length, and height for
 3898 children. These data are a small subset of many dozens of measurements on
 the same children, described in detail by Snyder (1977).
 }
-\details{
-DETAILS
+\examples{
+data(anthropometry)
+with(anthropometry, plot(age, foot_length, pch=16, cex=0.5, col=gender))
 }
 \keyword{datasets}
