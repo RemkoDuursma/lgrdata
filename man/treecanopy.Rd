@@ -29,10 +29,11 @@ of leaf thickness, the 'leaf mass per area'. The data show the usual pattern of 
 (higher LMA) toward the top of the trees, but individual trees show a lot of variation in LMA.
 }
 \examples{
+data(treecanopy)
 if(require(ggplot2)){
- ggplot(prefdata, aes(dfromtop,LMA,group=ID,col=species)) +
+ ggplot(treecanopy, aes(dfromtop,LMA,group=ID,col=species)) +
    geom_point() +
-   stat_smooth(method="lm",se=F) +
+   stat_smooth(method="lm",se=FALSE) +
    theme_minimal()
 }
 }

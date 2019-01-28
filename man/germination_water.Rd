@@ -13,6 +13,10 @@
   \item{\code{germ}}{integer Number of germinated seeds}
   \item{\code{n}}{integer Number of seeds tested (25 for all rows)}
 }}
+\source{
+Data are from Hewitt et al. 2015 (Austral Ecology 40(6):661-671), 
+shared by Charles Morris, and simplified for the purpose of this package.
+}
 \usage{
 germination_water
 }
@@ -31,5 +35,8 @@ with(germination_water,
   plot(jitter(water.potential), germ/n,
     pch=21, bg=terrain.colors(4)[species])
 )
+}
+\seealso{
+\code{\link{germination_fire}}
 }
 \keyword{datasets}

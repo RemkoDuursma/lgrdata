@@ -10,7 +10,7 @@
   the tree was sampled at stem base and near the top of the tree.}
   \item{\code{imagenr}}{integer At the stem base, six images were
   analyzed (and all vessels measured in that image). At apex, three images.}
-  \item{\code{vesseldiam}}{double Diameter of individual water-conducting vessels ($\mu$ m).}
+  \item{\code{vesseldiam}}{double Diameter of individual water-conducting vessels (mu m).}
 }}
 \source{
 Sebastian Pfautsch

@@ -25,6 +25,7 @@ long distance, and large number of dropouts in some years. The data include the 
 the number of starting yachts, and the number of yachts reaching the finish.
 }
 \examples{
+data(sydney_hobart_times)
 with(sydney_hobart_times, {
     plot(Year, Time)
     lines(Year, Time_record, type='s', col="red")

@@ -13,7 +13,8 @@
   \item{\code{Frass}}{double Frass produced ($g$)}
 }}
 \source{
-Data courtesy of Tara Murray, and simplified for the purpose of this book.
+Data courtesy of Tara Murray, and simplified for the purpose 
+of this package.
 }
 \usage{
 pupae

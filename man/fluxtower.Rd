@@ -7,7 +7,7 @@
 \format{A data frame with 244 rows and 8 variables:
 \describe{
   \item{\code{TIMESTAMP}}{factor Date and time}
-  \item{\code{FCO2}}{double Canopy CO2 flux ($\mu$ mol m$^{-2}$ s$^{-1}$)}
+  \item{\code{FCO2}}{double Canopy CO2 flux (mu mol m$^{-2}$ s$^{-1}$)}
   \item{\code{FH2O}}{double Canopy H2O flux (mmol m$^{-2}$ s$^{-1}$)}
   \item{\code{ustar}}{double Roughness length (m s$^{-1}$)}
   \item{\code{Tair}}{double Air temperature (degrees C)}

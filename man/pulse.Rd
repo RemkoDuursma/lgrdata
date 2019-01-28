@@ -44,4 +44,10 @@ to the class before the experiment. The forms were pre-assigned to either runnin
 and there were an equal number of each. In 1995 and 1998 not all of the forms were returned
 so the numbers running and sitting was still not entirely controlled."
 }
+\examples{
+data(pulse)
+with(pulse, plot(Weight, Pulse2-Pulse1, 
+  pch=19, col=c("red2", "dimgrey")[Ran]))
+abline(h=0, lty=5)
+}
 \keyword{datasets}

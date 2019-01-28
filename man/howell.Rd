@@ -23,6 +23,7 @@ These data were also used by McElreath (2016, "Statistical Rethinking",
 CRC Press). Data include measurements of height, age and weight on Khosan people.
 }
 \examples{
+data(howell)
 with(howell, plot(age, height, pch=19, col=sex))
 }
 \keyword{datasets}

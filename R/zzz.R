@@ -216,7 +216,7 @@
 #' @format A data frame with 244 rows and 8 variables:
 #' \describe{
 #'   \item{\code{TIMESTAMP}}{factor Date and time}
-#'   \item{\code{FCO2}}{double Canopy CO2 flux ($\mu$ mol m$^{-2}$ s$^{-1}$)}
+#'   \item{\code{FCO2}}{double Canopy CO2 flux (mu mol m$^{-2}$ s$^{-1}$)}
 #'   \item{\code{FH2O}}{double Canopy H2O flux (mmol m$^{-2}$ s$^{-1}$)}
 #'   \item{\code{ustar}}{double Roughness length (m s$^{-1}$)}
 #'   \item{\code{Tair}}{double Air temperature (degrees C)}
@@ -248,7 +248,7 @@
 #'   \item{\code{germ}}{integer Number of germinated seeds}
 #'   \item{\code{n}}{integer Number of seeds tested (20 for all rows)}
 #'}
-#' @seealso \code{\link{}}
+#' @seealso \code{\link{germination_water}}
 #' @source Data are from Hewitt et al. 2015 (Austral Ecology 40(6):661-671), shared by Charles Morris,
 #' and simplified for the purpose of this book.
 "germination_fire"
@@ -273,7 +273,9 @@
 #'   \item{\code{germ}}{integer Number of germinated seeds}
 #'   \item{\code{n}}{integer Number of seeds tested (25 for all rows)}
 #'}
-#' @source
+#' @source  Data are from Hewitt et al. 2015 (Austral Ecology 40(6):661-671), 
+#' shared by Charles Morris, and simplified for the purpose of this package.
+#' @seealso \code{\link{germination_fire}}
 #' @examples
 #' data(germination_water)
 #' with(germination_water,
@@ -348,7 +350,7 @@
 #'   \item{\code{AirPress}}{double Air pressure (kPa)}
 #'   \item{\code{RH}}{double Relative humidity (\%)}
 #'   \item{\code{VPD}}{double Vapour pressure deficit (kPa)}
-#'   \item{\code{PAR}}{double Photosynthetically active radiation ($\mu$ mol m$^{-2}$ s$^{-1}$)}
+#'   \item{\code{PAR}}{double Photosynthetically active radiation (mu mol m$^{-2}$ s$^{-1}$)}
 #'   \item{\code{Rain}}{double Precipitation (mm)}
 #'   \item{\code{wind}}{double Wind speed (m s$^{-1}$)}
 #'   \item{\code{winddirection}}{double Wind direction (degrees)}
@@ -439,11 +441,11 @@
 #'   \item{\code{narea}}{double Nitrogen per area (gN m$^{-2}$)}
 #'}
 #'@examples
-#'data(prefdata)
+#'data(treecanopy)
 #'if(require(ggplot2)){
-#'  ggplot(prefdata, aes(dfromtop,LMA,group=ID,col=species)) +
+#'  ggplot(treecanopy, aes(dfromtop,LMA,group=ID,col=species)) +
 #'    geom_point() +
-#'    stat_smooth(method="lm",se=F) +
+#'    stat_smooth(method="lm",se=FALSE) +
 #'    theme_minimal()
 #'}
 "treecanopy"
@@ -457,7 +459,8 @@
 #' After the larvae pupated (that is, turned into pupae), the body weight
 #' was measured, as well as the cumulative 'frass' (larvae excrement) over the
 #' entire time it took to pupate.
-#' @source Data courtesy of Tara Murray, and simplified for the purpose of this book.
+#' @source Data courtesy of Tara Murray, and simplified for the purpose 
+#' of this package.
 #' @format A data frame with 84 rows and 5 variables:
 #' \describe{
 #'   \item{\code{T_treatment}}{integer Temperature treatments ('ambient' and 'elevated')}
@@ -520,7 +523,7 @@
 #'   the tree was sampled at stem base and near the top of the tree.}
 #'   \item{\code{imagenr}}{integer At the stem base, six images were
 #'   analyzed (and all vessels measured in that image). At apex, three images.}
-#'   \item{\code{vesseldiam}}{double Diameter of individual water-conducting vessels ($\mu$ m).}
+#'   \item{\code{vesseldiam}}{double Diameter of individual water-conducting vessels (mu m).}
 #'}
 "vessel"
 
@@ -636,11 +639,10 @@
 #' so the numbers running and sitting was still not entirely controlled."
 #' @source <http://www.statsci.org/data/oz/ms212.html>
 #' @examples
-#'
-#' with(pulse, plot(Weight, Pulse2-Pulse1, pch=19,
-#'   col=c("red2", "dimgrey")[Ran]))
+#' data(pulse)
+#' with(pulse, plot(Weight, Pulse2-Pulse1, 
+#'   pch=19, col=c("red2", "dimgrey")[Ran]))
 #' abline(h=0, lty=5)
-#' legend("topleft", c("))
 "pulse"
 
 

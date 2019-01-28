@@ -11,7 +11,7 @@
   \item{\code{AirPress}}{double Air pressure (kPa)}
   \item{\code{RH}}{double Relative humidity (\%)}
   \item{\code{VPD}}{double Vapour pressure deficit (kPa)}
-  \item{\code{PAR}}{double Photosynthetically active radiation ($\mu$ mol m$^{-2}$ s$^{-1}$)}
+  \item{\code{PAR}}{double Photosynthetically active radiation (mu mol m$^{-2}$ s$^{-1}$)}
   \item{\code{Rain}}{double Precipitation (mm)}
   \item{\code{wind}}{double Wind speed (m s$^{-1}$)}
   \item{\code{winddirection}}{double Wind direction (degrees)}

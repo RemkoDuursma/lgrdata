@@ -31,6 +31,6 @@ data).
 This dataset contains the fire treatment data.
 }
 \seealso{
-\code{\link{}}
+\code{\link{germination_water}}
 }
 \keyword{datasets}

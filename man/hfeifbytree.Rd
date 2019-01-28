@@ -32,6 +32,7 @@ averaged data.
 }
 \examples{
 # Variable sample sizes over time. On many occassions, subsamples were measured.
+data(hfeifbytree)
 ftable(xtabs(~Date+treat, data=hfeifbytree))
 }
 \keyword{datasets}
