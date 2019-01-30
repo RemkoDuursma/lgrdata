@@ -46,7 +46,7 @@ so the numbers running and sitting was still not entirely controlled."
 }
 \examples{
 data(pulse)
-with(pulse, plot(Weight, Pulse2-Pulse1, 
+with(pulse, plot(Weight, Pulse2-Pulse1,
   pch=19, col=c("red2", "dimgrey")[Ran]))
 abline(h=0, lty=5)
 }
