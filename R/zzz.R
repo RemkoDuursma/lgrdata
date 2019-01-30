@@ -278,7 +278,7 @@
 #'   \item{\code{germ}}{integer Number of germinated seeds}
 #'   \item{\code{n}}{integer Number of seeds tested (25 for all rows)}
 #'}
-#' @source  Data are from Hewitt et al. 2015 (Austral Ecology 40(6):661-671), 
+#' @source  Data are from Hewitt et al. 2015 (Austral Ecology 40(6):661-671),
 #' shared by Charles Morris, and simplified for the purpose of this package.
 #' @seealso \code{\link{germination_fire}}
 #' @examples
@@ -396,6 +396,34 @@
 "hydro"
 
 
+#' @title Icecream sales and temperature
+#' @description A synthetic dataset on weekly ice cream sales in two locations in Amsterdam,
+#' along with air temperature. The idea is that the ice cream salesman first sold icecream in
+#' 'Oosterpark', and decided to move shop to the 'Dappermarkt' the year after. Did sales improve?
+#' This dataset can be used to show that naive conclusions from simple linear model fits can
+#' be misleading, and that the use of covariates (here, air temperature) can change conclusions
+#' about effects.
+#'
+#' @format A data frame with 40 rows and 3 variables:
+#' \describe{
+#'   \item{\code{temperature}}{double Air temperature (C)}
+#'   \item{\code{sales}}{double Icecream sales per week (in local currency)}
+#'   \item{\code{location}}{factor Either 'Dappermarkt' or 'Oosterpark'}
+#'}
+#'@examples
+#'data(icecream)
+#'
+#'# Linear model, temperature as covariate
+#'fit_ice <- lm(sales ~ temperature*location, data=icecream)
+#'
+#'# Try to guess from coefficients where the sales were higher:
+#'summary(fit_ice)
+#'
+#'# What about now?
+#'with(icecream, plot(temperature, sales, pch=19, col=location))
+#'legend("topleft", levels(icecream$location), fill=palette())
+"icecream"
+
 #' @title Genetically modified soybean litter decomposition
 #' @description Soybean litter decomposition as a function of time (\code{date}), type of
 #' litter (\code{variety}), herbicides applied (\code{herbicide}), and where in the soil
@@ -464,7 +492,7 @@
 #' After the larvae pupated (that is, turned into pupae), the body weight
 #' was measured, as well as the cumulative 'frass' (larvae excrement) over the
 #' entire time it took to pupate.
-#' @source Data courtesy of Tara Murray, and simplified for the purpose 
+#' @source Data courtesy of Tara Murray, and simplified for the purpose
 #' of this package.
 #' @format A data frame with 84 rows and 5 variables:
 #' \describe{
@@ -645,7 +673,7 @@
 #' @source <http://www.statsci.org/data/oz/ms212.html>
 #' @examples
 #' data(pulse)
-#' with(pulse, plot(Weight, Pulse2-Pulse1, 
+#' with(pulse, plot(Weight, Pulse2-Pulse1,
 #'   pch=19, col=c("red2", "dimgrey")[Ran]))
 #' abline(h=0, lty=5)
 "pulse"

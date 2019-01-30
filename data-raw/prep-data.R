@@ -58,6 +58,7 @@ hfeifplotmeans <- read.csv("HFEIFplotmeans.csv")
 hfemet2008 <- read.csv("HFEmet2008.csv")
 howell <- read.csv("howell.csv")
 hydro <- read.csv("Hydro.csv")
+icecream <- read.csv("icecream_amsterdam.csv")
 masslost <- read.csv("masslost.csv")
 treecanopy <- read.csv("prefdata.csv")
 pupae <- read.csv("pupae.csv")
@@ -96,6 +97,7 @@ use_data(hfeifplotmeans,overwrite=TRUE)
 use_data(hfemet2008,overwrite=TRUE)
 use_data(howell,overwrite=TRUE)
 use_data(hydro,overwrite=TRUE)
+use_data(icecream,overwrite=TRUE)
 use_data(masslost,overwrite=TRUE)
 use_data(treecanopy,overwrite=TRUE)
 use_data(pupae,overwrite=TRUE)
@@ -138,6 +140,7 @@ m <- c(makeOxygen(allometry,print=FALSE),"\n\n",
        makeOxygen(hfemet2008,print=FALSE),"\n\n",
        makeOxygen(howell,print=FALSE),"\n\n",
        makeOxygen(hydro,print=FALSE),"\n\n",
+       makeOxygen(icecream,print=FALSE),"\n\n",
        makeOxygen(ixfsub,print=FALSE),"\n\n",
        makeOxygen(masslost,print=FALSE),"\n\n",
        makeOxygen(treecanopy,print=FALSE),"\n\n",

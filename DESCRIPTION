@@ -1,7 +1,7 @@
 Package: lgrdata
 Type: Package
 Title: Example Datasets for A Learning Guide to R
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person("Remko", "Duursma", email = "remkoduursma@gmail.com", role = c("aut", "cre"))
 Description: A largish collection of example datasets, including several classics. Many of
     these datasets are well suited for regression, classification, and visualization.
