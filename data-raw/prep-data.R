@@ -3,6 +3,7 @@ setwd(here::here())
 setwd("data-raw")
 
 library(lubridate)
+library(dplyr)
 
 # This is how to generate all code below.
 if(FALSE){
@@ -38,6 +39,25 @@ allometry <- read.csv("Allometry.csv")
 anthropometry <- read.csv("anthropometry.csv")
 berkeley <- read.csv("berkeley.csv")
 callitrishydraulic <- read.csv("callitrishydraulic.csv")
+cars <- read.csv("cars.csv", na.strings="?") %>%
+  select(-ID) %>%
+  mutate(mpg = 282.5 / mpg,
+         weight = weight / 2.20462,
+         displacement = displacement * 0.0163871,
+         model = model + 1900,
+         origin = as.factor(case_when(origin == 1 ~ "American",
+                            origin == 2 ~ "European",
+                            origin == 3 ~ "Japanese")),
+         car_name = as.character(car_name)) %>%
+  dplyr::rename(fuel_efficiency = mpg,
+                engine_volume = displacement,
+                build_year = model) %>%
+  dplyr::select(car_name, origin, build_year, everything())
+
+
+
+
+
 cereals <- read.csv("Cereals.csv")
 cereals$Cereal.name <- as.character(cereals$Cereal.name)
 
@@ -80,6 +100,7 @@ use_data(allometry,overwrite=TRUE)
 use_data(anthropometry,overwrite=TRUE)
 use_data(berkeley,overwrite=TRUE)
 use_data(callitrishydraulic,overwrite=TRUE)
+use_data(cars, overwrite = TRUE)
 use_data(cereals,overwrite=TRUE)
 use_data(choat_precipp50,overwrite=TRUE)
 use_data(coweeta,overwrite=TRUE)
@@ -123,6 +144,7 @@ m <- c(makeOxygen(allometry,print=FALSE),"\n\n",
        makeOxygen(anthropometry,print=FALSE),"\n\n",
        makeOxygen(berkeley,print=FALSE),"\n\n",
        makeOxygen(callitrishydraulic,print=FALSE),"\n\n",
+       makeOxygen(cars,print=FALSE),"\n\n",
        makeOxygen(cereals,print=FALSE),"\n\n",
        makeOxygen(choat_precipp50,print=FALSE),"\n\n",
        makeOxygen(coweeta,print=FALSE),"\n\n",
