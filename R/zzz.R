@@ -79,6 +79,7 @@
 #' @title Cars data
 #' @description Fuel efficiency, weight, acceleration, and other measurements on 398 cars. The majority
 #' of the data come from American cars (n = 249), and some European (n = 70) and Japanese (n = 79).
+#' Not to be confused with cars data provided by base R, see \code{\link{cars}} and \code{\link{mtcars}}.
 #' @source Data originally hosted on <http://lib.stat.cmu.edu/datasets/>, also used in ISLR (as the
 #' 'Auto' dataset). Converted to metric units for use in this package.
 #' @format A data frame with 398 rows and 9 variables:
@@ -93,7 +94,7 @@
 #'   \item{\code{weight}}{double Car weight in kg}
 #'   \item{\code{acceleration}}{double Time to accelerate to 60mph}
 #'}
-"cars"
+"automobiles"
 
 #' @title Cereal nutrition data
 #' @description This dataset summarizes 77 different brands of breakfast cereals,

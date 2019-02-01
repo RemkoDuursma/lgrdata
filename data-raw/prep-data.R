@@ -4,11 +4,11 @@ setwd("data-raw")
 
 library(lubridate)
 library(dplyr)
+library(usethis)
+library(sinew)
 
 # This is how to generate all code below.
 if(FALSE){
-
-  library(magrittr)
 
   fns <- dir()
 
@@ -39,7 +39,7 @@ allometry <- read.csv("Allometry.csv")
 anthropometry <- read.csv("anthropometry.csv")
 berkeley <- read.csv("berkeley.csv")
 callitrishydraulic <- read.csv("callitrishydraulic.csv")
-cars <- read.csv("cars.csv", na.strings="?") %>%
+automobiles <- read.csv("cars.csv", na.strings="?") %>%
   select(-ID) %>%
   mutate(mpg = 282.5 / mpg,
          weight = weight / 2.20462,
@@ -95,12 +95,11 @@ titanic <- read.table("titanic.txt", header=TRUE)
 
 
 
-library(usethis)
 use_data(allometry,overwrite=TRUE)
 use_data(anthropometry,overwrite=TRUE)
 use_data(berkeley,overwrite=TRUE)
 use_data(callitrishydraulic,overwrite=TRUE)
-use_data(cars, overwrite = TRUE)
+use_data(automobiles, overwrite = TRUE)
 use_data(cereals,overwrite=TRUE)
 use_data(choat_precipp50,overwrite=TRUE)
 use_data(coweeta,overwrite=TRUE)
@@ -136,7 +135,7 @@ use_data(titanic,overwrite=TRUE)
 
 # Make roxygen
 if(FALSE){
-  library(sinew)
+
   ud <- paste0("makeOxygen(", c(csv_data, txt_data), ",print=FALSE)")
   cat(noquote(ud), sep="\n")
 
