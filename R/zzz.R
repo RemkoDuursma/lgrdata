@@ -119,7 +119,20 @@
 #'}
 "cereals"
 
+#' @title Cereal nutrition data - small subset nr1
+#' @description Small subset nr1 of the Cereals data to practice merging,
+#' see \code{\link{cereals}} (available are cereal1, cereal2 and cereal3).
+"cereal1"
 
+#' @title Cereal nutrition data - small subset nr2
+#' @description Small subset nr1 of the Cereals data to practice merging,
+#' see \code{\link{cereals}} (available are cereal1, cereal2 and cereal3).
+"cereal2"
+
+#' @title Cereal nutrition data - small subset nr3
+#' @description Small subset nr1 of the Cereals data to practice merging,
+#' see \code{\link{cereals}} (available are cereal1, cereal2 and cereal3).
+"cereal3"
 
 #' @title Choat's Plant Drought Tolerance
 #' @description Data include a measure of plant drought tolerance (P50, more negative values

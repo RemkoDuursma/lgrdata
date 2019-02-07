@@ -39,6 +39,7 @@ allometry <- read.csv("Allometry.csv")
 anthropometry <- read.csv("anthropometry.csv")
 berkeley <- read.csv("berkeley.csv")
 callitrishydraulic <- read.csv("callitrishydraulic.csv")
+
 automobiles <- read.csv("cars.csv", na.strings="?") %>%
   select(-ID) %>%
   mutate(mpg = 282.5 / mpg,
@@ -56,11 +57,12 @@ automobiles <- read.csv("cars.csv", na.strings="?") %>%
 
 
 
-
-
 cereals <- read.csv("Cereals.csv")
 cereals$Cereal.name <- as.character(cereals$Cereal.name)
 
+cereal1 <- read.csv("cereal1.csv")
+cereal2 <- read.csv("cereal2.csv")
+cereal3 <- read.csv("cereal3.csv")
 
 choat_precipp50 <- read.csv("Choat_precipP50.csv")
 coweeta <- read.csv("coweeta.csv")
@@ -101,6 +103,9 @@ use_data(berkeley,overwrite=TRUE)
 use_data(callitrishydraulic,overwrite=TRUE)
 use_data(automobiles, overwrite = TRUE)
 use_data(cereals,overwrite=TRUE)
+use_data(cereal1,overwrite=TRUE)
+use_data(cereal2,overwrite=TRUE)
+use_data(cereal3,overwrite=TRUE)
 use_data(choat_precipp50,overwrite=TRUE)
 use_data(coweeta,overwrite=TRUE)
 use_data(dutchelection,overwrite=TRUE)
