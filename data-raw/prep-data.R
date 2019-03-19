@@ -60,9 +60,9 @@ automobiles <- read.csv("cars.csv", na.strings="?") %>%
 cereals <- read.csv("Cereals.csv")
 cereals$Cereal.name <- as.character(cereals$Cereal.name)
 
-cereal1 <- read.csv("cereal1.csv")
-cereal2 <- read.csv("cereal2.csv")
-cereal3 <- read.csv("cereal3.csv")
+cereal1 <- read.csv("cereal1.csv", colClasses = c("character", "numeric"))
+cereal2 <- read.csv("cereal2.csv", colClasses = c("character", "numeric"))
+cereal3 <- read.csv("cereal3.csv", colClasses = c("character", "numeric"))
 
 choat_precipp50 <- read.csv("Choat_precipP50.csv")
 coweeta <- read.csv("coweeta.csv")
@@ -82,6 +82,7 @@ howell <- read.csv("howell.csv")
 hydro <- read.csv("Hydro.csv")
 icecream <- read.csv("icecream_amsterdam.csv")
 masslost <- read.csv("masslost.csv")
+oil  <- read.csv("oils.csv")
 treecanopy <- read.csv("prefdata.csv")
 pupae <- read.csv("pupae.csv")
 rain <- read.csv("Rain.csv")
@@ -124,6 +125,7 @@ use_data(howell,overwrite=TRUE)
 use_data(hydro,overwrite=TRUE)
 use_data(icecream,overwrite=TRUE)
 use_data(masslost,overwrite=TRUE)
+use_data(oil,overwrite=TRUE)
 use_data(treecanopy,overwrite=TRUE)
 use_data(pupae,overwrite=TRUE)
 use_data(rain,overwrite=TRUE)
@@ -169,6 +171,7 @@ m <- c(makeOxygen(allometry,print=FALSE),"\n\n",
        makeOxygen(icecream,print=FALSE),"\n\n",
        makeOxygen(ixfsub,print=FALSE),"\n\n",
        makeOxygen(masslost,print=FALSE),"\n\n",
+       makeOxygen(oil,print=FALSE),"\n\n",
        makeOxygen(treecanopy,print=FALSE),"\n\n",
        makeOxygen(pupae,print=FALSE),"\n\n",
        makeOxygen(rain,print=FALSE),"\n\n",

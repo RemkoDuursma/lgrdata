@@ -514,6 +514,17 @@
 #'}
 "treecanopy"
 
+#' @title Crude oil production
+#' @description Crude oil production for the top 8 oil-producing countries
+#' (minus Russia, for which understandably no data were available pre-1990), for
+#' the period 1971-2017.
+#' @format A data frame with 376 rows and 3 variables:
+#' \describe{
+#'   \item{\code{country}}{factor Country code}
+#'   \item{\code{year}}{integer 1971 - 2017}
+#'   \item{\code{production}}{double Annual crude oil production in TOE.}
+#'}
+"oil"
 
 
 #' @title Pupae data
