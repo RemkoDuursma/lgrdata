@@ -4,14 +4,16 @@
 \name{icecream}
 \alias{icecream}
 \title{Icecream sales and temperature}
-\format{A data frame with 40 rows and 3 variables:
+\format{
+A data frame with 40 rows and 3 variables:
 \describe{
   \item{\code{temperature}}{double Air temperature (C)}
   \item{\code{sales}}{double Icecream sales per week (in local currency)}
   \item{\code{location}}{factor Either 'Dappermarkt' or 'Oosterpark'}
-}}
+}
+}
 \usage{
-icecream
+data(icecream)
 }
 \description{
 A synthetic dataset on weekly ice cream sales in two locations in Amsterdam,

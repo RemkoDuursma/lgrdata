@@ -4,7 +4,8 @@
 \name{automobiles}
 \alias{automobiles}
 \title{Cars data}
-\format{A data frame with 398 rows and 9 variables:
+\format{
+A data frame with 398 rows and 9 variables:
 \describe{
   \item{\code{car_name}}{character Make and model}
   \item{\code{origin}}{factor 'American', 'European' or 'Japanese'}
@@ -15,13 +16,14 @@
   \item{\code{horsepower}}{integer Engine power (hp)}
   \item{\code{weight}}{double Car weight in kg}
   \item{\code{acceleration}}{double Time to accelerate to 60mph}
-}}
+}
+}
 \source{
 Data originally hosted on <http://lib.stat.cmu.edu/datasets/>, also used in ISLR (as the
 'Auto' dataset). Converted to metric units for use in this package.
 }
 \usage{
-automobiles
+data(automobiles)
 }
 \description{
 Fuel efficiency, weight, acceleration, and other measurements on 398 cars. The majority

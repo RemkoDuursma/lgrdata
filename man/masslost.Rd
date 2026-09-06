@@ -4,7 +4,8 @@
 \name{masslost}
 \alias{masslost}
 \title{Genetically modified soybean litter decomposition}
-\format{A data frame with 246 rows and 8 variables:
+\format{
+A data frame with 246 rows and 8 variables:
 \describe{
   \item{\code{plot}}{integer A total of eight plots.}
   \item{\code{block}}{integer A total of four blocks.}
@@ -20,12 +21,13 @@
   \item{\code{masslost}}{double The proportion of the initial mass that was lost from
   each litter bag during field incubation. Some values are lower than zero due to
   insufficient washing of dirt and biota from litter prior to weighing.}
-}}
+}
+}
 \source{
 Jeff Powell
 }
 \usage{
-masslost
+data(masslost)
 }
 \description{
 Soybean litter decomposition as a function of time (\code{date}), type of

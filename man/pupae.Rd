@@ -4,20 +4,22 @@
 \name{pupae}
 \alias{pupae}
 \title{Pupae data}
-\format{A data frame with 84 rows and 5 variables:
+\format{
+A data frame with 84 rows and 5 variables:
 \describe{
   \item{\code{T_treatment}}{integer Temperature treatments ('ambient' and 'elevated')}
   \item{\code{CO2_treatment}}{integer CO$_2$ treatment (280 or 400 ppm).}
   \item{\code{Gender}}{integer The gender of the pupae : 0 (male), 1 (female)}
   \item{\code{PupalWeight}}{double Weight of the pupae ($g$)}
   \item{\code{Frass}}{double Frass produced ($g$)}
-}}
+}
+}
 \source{
 Data courtesy of Tara Murray, and simplified for the purpose
 of this package.
 }
 \usage{
-pupae
+data(pupae)
 }
 \description{
 This dataset is from an experiment where larvae were

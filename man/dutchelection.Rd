@@ -4,7 +4,8 @@
 \name{dutchelection}
 \alias{dutchelection}
 \title{Dutch election data}
-\format{A data frame with 22 rows and 12 variables:
+\format{
+A data frame with 22 rows and 12 variables:
 \describe{
   \item{\code{Date}}{factor Date of poll (NOTE: has not been converted to Date class)}
   \item{\code{VVD}}{double Vote for this part in percentage.}
@@ -18,12 +19,13 @@
   \item{\code{SGP}}{double Vote for this part in percentage.}
   \item{\code{PvdD}}{double Vote for this part in percentage.}
   \item{\code{FiftyPlus}}{double Vote for this part in percentage.}
-}}
+}
+}
 \source{
 <http://en.wikipedia.org/wiki/Dutch_general_election,_2012>
 }
 \usage{
-dutchelection
+data(dutchelection)
 }
 \description{
 Polls for the 12 leading political parties in the Netherlands,

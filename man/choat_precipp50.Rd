@@ -4,18 +4,20 @@
 \name{choat_precipp50}
 \alias{choat_precipp50}
 \title{Choat's Plant Drought Tolerance}
-\format{A data frame with 115 rows and 2 variables:
+\format{
+A data frame with 115 rows and 2 variables:
 \describe{
   \item{\code{annualprecip}}{integer Annual rainfall (mm) where the plant was sampled.}
   \item{\code{P50}}{double The negative water pressure in the xylem at which 50\% of stem
   conductivity is lost. More negative indicates higher tolerance to drought.}
-}}
+}
+}
 \source{
 Choat B. et al., 2012, Global convergence in the vulnerability of forests to drought,
 Nature 491, pages 752–755 <https://www.nature.com/articles/nature11688>.
 }
 \usage{
-choat_precipp50
+data(choat_precipp50)
 }
 \description{
 Data include a measure of plant drought tolerance (P50, more negative values

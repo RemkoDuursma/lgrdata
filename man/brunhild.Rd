@@ -4,16 +4,18 @@
 \name{brunhild}
 \alias{brunhild}
 \title{A Baboon Named Brunhilda}
-\format{A data frame with 21 rows and 2 variables:
+\format{
+A data frame with 21 rows and 2 variables:
 \describe{
   \item{\code{Hours}}{integer Hours after drug injection}
   \item{\code{Sulfate}}{double Tagged sulfate concentration in blood}
-}}
+}
+}
 \source{
 <http://www.statsci.org/data/general/brunhild.html>
 }
 \usage{
-brunhild
+data(brunhild)
 }
 \description{
 The observed responses are Geiger counter counts (times 10-4) used

@@ -4,17 +4,19 @@
 \name{rain}
 \alias{rain}
 \title{Rain data}
-\format{A data frame with 3653 rows and 3 variables:
+\format{
+A data frame with 3653 rows and 3 variables:
 \describe{
   \item{\code{Year}}{integer Year}
   \item{\code{DOY}}{integer Day of year (1-366)}
   \item{\code{Rain}}{double Daily rainfall amount (mm)}
-}}
+}
+}
 \source{
 <http://www.bom.gov.au/climate/data/>, simplified and adjusted for this package.
 }
 \usage{
-rain
+data(rain)
 }
 \description{
 This dataset contains ten years (1995-2006) of daily rainfall

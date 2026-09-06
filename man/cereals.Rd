@@ -4,7 +4,8 @@
 \name{cereals}
 \alias{cereals}
 \title{Cereal nutrition data}
-\format{A data frame with 77 rows and 13 variables:
+\format{
+A data frame with 77 rows and 13 variables:
 \describe{
   \item{\code{Cereal.name}}{character Cereal name}
   \item{\code{Manufacturer}}{factor Cereal manufacturer (letter code)}
@@ -19,12 +20,13 @@
   \item{\code{potass}}{integer}
   \item{\code{vitamins}}{integer}
   \item{\code{rating}}{double Health rating of the cereal (unknown calculation method).}
-}}
+}
+}
 \source{
 <https://dasl.datadescription.com/datafile/cereals/> (Originally at Statlib CMU).
 }
 \usage{
-cereals
+data(cereals)
 }
 \description{
 This dataset summarizes 77 different brands of breakfast cereals,

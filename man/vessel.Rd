@@ -4,19 +4,21 @@
 \name{vessel}
 \alias{vessel}
 \title{Xylem vessel diameters}
-\format{A data frame with 550 rows and 3 variables:
+\format{
+A data frame with 550 rows and 3 variables:
 \describe{
   \item{\code{position}}{integer Either 'base' or 'apex' :
   the tree was sampled at stem base and near the top of the tree.}
   \item{\code{imagenr}}{integer At the stem base, six images were
   analyzed (and all vessels measured in that image). At apex, three images.}
   \item{\code{vesseldiam}}{double Diameter of individual water-conducting vessels (mu m).}
-}}
+}
+}
 \source{
 Sebastian Pfautsch
 }
 \usage{
-vessel
+data(vessel)
 }
 \description{
 Measurements of diameters of xylem (wood) vessels

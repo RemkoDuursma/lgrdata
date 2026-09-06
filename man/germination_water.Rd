@@ -4,7 +4,8 @@
 \name{germination_water}
 \alias{germination_water}
 \title{Seed germination as affected by water}
-\format{A data frame with 352 rows and 5 variables:
+\format{
+A data frame with 352 rows and 5 variables:
 \describe{
   \item{\code{species}}{factor One of four Melaleuca species}
   \item{\code{site}}{integer Coding for the site where the seed was collected}
@@ -12,13 +13,14 @@
   incubation (low values is drier)}
   \item{\code{germ}}{integer Number of germinated seeds}
   \item{\code{n}}{integer Number of seeds tested (25 for all rows)}
-}}
+}
+}
 \source{
 Data are from Hewitt et al. 2015 (Austral Ecology 40(6):661-671),
 shared by Charles Morris, and simplified for the purpose of this package.
 }
 \usage{
-germination_water
+data(germination_water)
 }
 \description{
 Two datasets on the germination success of seeds of four \emph{Melaleuca}

@@ -4,19 +4,21 @@
 \name{titanic}
 \alias{titanic}
 \title{Passengers on the Titanic}
-\format{A data frame with 1313 rows and 5 variables:
+\format{
+A data frame with 1313 rows and 5 variables:
 \describe{
   \item{\code{Name}}{integer Recorded name of passenger}
   \item{\code{PClass}}{integer Passenger class: 1st, 2nd or 3rd}
   \item{\code{Age}}{double Age in years (many missing)}
   \item{\code{Sex}}{integer male or female}
   \item{\code{Survived}}{integer 1 = Yes, 0 = No}
-}}
+}
+}
 \source{
 <http://www.statsci.org/data/general/titanic.html>
 }
 \usage{
-titanic
+data(titanic)
 }
 \description{
 Survival status of passengers on the Titanic,

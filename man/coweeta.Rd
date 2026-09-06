@@ -4,7 +4,8 @@
 \name{coweeta}
 \alias{coweeta}
 \title{Coweeta tree data}
-\format{A data frame with 87 rows and 9 variables:
+\format{
+A data frame with 87 rows and 9 variables:
 \describe{
   \item{\code{species}}{integer One of 10 tree species}
   \item{\code{site}}{integer Site abbreviation}
@@ -15,13 +16,14 @@
   \item{\code{folmass}}{double Foliage mass (kg)}
   \item{\code{SLA}}{double Specific leaf area (index of leaf thinness) (cm2 g-1)}
   \item{\code{biomass}}{double Total tree biomass}
-}}
+}
+}
 \source{
 Martin J.G., et al., 1998, Aboveground biomass and nitrogen allocation of ten deciduous
 southern Appalachian tree species, Canadian Journal of Forest Research 28, 1648-1659.
 }
 \usage{
-coweeta
+data(coweeta)
 }
 \description{
 Tree measurements in the Coweeta LTER.

@@ -4,16 +4,18 @@
 \name{hfeifplotmeans}
 \alias{hfeifplotmeans}
 \title{I x F at the HFE - plot-level observations}
-\format{A data frame with 320 rows and 5 variables:
+\format{
+A data frame with 320 rows and 5 variables:
 \describe{
   \item{\code{plotnr}}{integer A total of sixteen plots (four treatments).}
   \item{\code{Date}}{factor The date of measurement (YYYY-MM-DD)}
   \item{\code{diameter}}{double Mean diameter for the sample trees ($cm$).}
   \item{\code{height}}{double Mean height for the sample trees ($m$).}
   \item{\code{treat}}{integer One of four treatments (I - irrigated, F - dry fertilized, IL - Liquid fertilizer plus irrigation, C - control)}
-}}
+}
+}
 \usage{
-hfeifplotmeans
+data(hfeifplotmeans)
 }
 \description{
 Heights and stem diameters of trees growing in a fertilization x irrigation experiment in

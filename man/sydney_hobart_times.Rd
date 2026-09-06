@@ -4,19 +4,21 @@
 \name{sydney_hobart_times}
 \alias{sydney_hobart_times}
 \title{Sydney to Hobart winning times}
-\format{A data frame with 72 rows and 5 variables:
+\format{
+A data frame with 72 rows and 5 variables:
 \describe{
   \item{\code{Year}}{integer Year race was held}
   \item{\code{Time}}{double Total time (days)}
   \item{\code{fleet_start}}{integer Number yachts at start}
   \item{\code{fleet_finish}}{integer Number yachts at finish}
   \item{\code{Time_record}}{double Record race up to this year}
-}}
+}
+}
 \source{
 <https://en.wikipedia.org/wiki/Sydney_to_Hobart_Yacht_Race>
 }
 \usage{
-sydney_hobart_times
+data(sydney_hobart_times)
 }
 \description{
 Winning times for the Sydney to Hobart Yacht Race. An annual sail yacht race over

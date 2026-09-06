@@ -4,9 +4,11 @@
 \name{cereal1}
 \alias{cereal1}
 \title{Cereal nutrition data - small subset nr1}
-\format{An object of class \code{data.frame} with 10 rows and 2 columns.}
+\format{
+An object of class \code{data.frame} with 10 rows and 2 columns.
+}
 \usage{
-cereal1
+data(cereal1)
 }
 \description{
 Small subset nr1 of the Cereals data to practice merging,

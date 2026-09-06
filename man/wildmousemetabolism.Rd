@@ -4,7 +4,8 @@
 \name{wildmousemetabolism}
 \alias{wildmousemetabolism}
 \title{Mouse metabolism}
-\format{A data frame with 864 rows and 9 variables:
+\format{
+A data frame with 864 rows and 9 variables:
 \describe{
   \item{\code{id}}{integer Individual number}
   \item{\code{run}}{integer The experiment was repeated three times (run = 1,2,3)}
@@ -15,12 +16,13 @@
   \item{\code{wheel}}{integer Whether the mouse could use an exercise wheel ('Yes') or not ('No')}
   \item{\code{rmr}}{double Resting metabolic rate (minimum rate of a running average over 12min) (kC hour-1)}
   \item{\code{sex}}{integer Male or Female}
-}}
+}
+}
 \source{
 Christopher Turbill
 }
 \usage{
-wildmousemetabolism
+data(wildmousemetabolism)
 }
 \description{
 Wild mice were placed in a device where the metabolic rate (energy used by the animal)

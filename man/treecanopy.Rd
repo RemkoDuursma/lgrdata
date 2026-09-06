@@ -4,22 +4,24 @@
 \name{treecanopy}
 \alias{treecanopy}
 \title{Tree canopy gradients in the Priest River Experimental Forest (PREF)}
-\format{A data frame with 249 rows and 7 variables:
+\format{
+A data frame with 249 rows and 7 variables:
 \describe{
   \item{\code{ID}}{integer ID of the individual tree}
   \item{\code{species}}{integer Pinus ponderosa or Pinus monticola}
   \item{\code{dfromtop}}{double Distance from top of tree (where leaf sample was taken) (m)}
   \item{\code{totheight}}{double Total height of the tree (m)}
   \item{\code{height}}{double Height from the ground (where sample was taken) (m)}
-  \item{\code{LMA}}{double Leaf mass per area (g m$^{-2}$)}
-  \item{\code{narea}}{double Nitrogen per area (gN m$^{-2}$)}
-}}
+  \item{\code{LMA}}{double Leaf mass per area (g m-2)}
+  \item{\code{narea}}{double Nitrogen per area (gN m-2)}
+}
+}
 \source{
 Marshall, J.D., Monserud, R.A. 2003. Foliage height influences specific
 leaf area of three conifer species. Can J For Res 33:164-170
 }
 \usage{
-treecanopy
+data(treecanopy)
 }
 \description{
 Leaves of two pine species (35 trees in total) were sampled throughout their canopy, usually 8 samples were

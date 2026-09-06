@@ -4,18 +4,20 @@
 \name{anthropometry}
 \alias{anthropometry}
 \title{Child anthropometry}
-\format{A data frame with 3898 rows and 4 variables:
+\format{
+A data frame with 3898 rows and 4 variables:
 \describe{
   \item{\code{age}}{double Age in years}
   \item{\code{gender}}{integer "female" or "male"}
   \item{\code{foot_length}}{integer Total foot length (mm)}
   \item{\code{height}}{double Total height (cm)}
-}}
+}
+}
 \source{
 <http://mreed.umtri.umich.edu/mreed/downloads.html>.
 }
 \usage{
-anthropometry
+data(anthropometry)
 }
 \description{
 Data include measurements of age, foot length, and height for

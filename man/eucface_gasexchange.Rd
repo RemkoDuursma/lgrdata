@@ -4,7 +4,8 @@
 \name{eucface_gasexchange}
 \alias{eucface_gasexchange}
 \title{Leaf gas exchange at the EucFACE}
-\format{A data frame with 84 rows and 7 variables:
+\format{
+A data frame with 84 rows and 7 variables:
 \describe{
   \item{\code{Date}}{factor Date label (A-D)}
   \item{\code{CO2}}{integer CO2 treatment, Amb=ambient, Ele=elevated}
@@ -13,13 +14,14 @@
   \item{\code{Photo}}{double Rate of leaf photosynthesis (mu mol m-2 s-1)}
   \item{\code{Trmmol}}{double Rate of leaf transpiration (mmol m-2 s-1)}
   \item{\code{VpdL}}{double Vapour pressure deficit (kPa)}
-}}
+}
+}
 \source{
 Gimeno T.E., 2015, Conserved stomatal behaviour under elevated CO2 and varying
 water availability in a mature woodland. Functional Ecology <https://doi.org/10.1111/1365-2435.12532>
 }
 \usage{
-eucface_gasexchange
+data(eucface_gasexchange)
 }
 \description{
 Measurements of leaf net photosynthesis at the EucFACE experiment,

@@ -4,17 +4,19 @@
 \name{memory}
 \alias{memory}
 \title{Memory of words dataset}
-\format{A data frame with 100 rows and 3 variables:
+\format{
+A data frame with 100 rows and 3 variables:
 \describe{
   \item{\code{Age}}{integer Age of person tested (yr)}
   \item{\code{Process}}{factor One of five methods used to memorize the words. }
   \item{\code{Words}}{double Number of words recalled.}
-}}
+}
+}
 \source{
 <http://www.statsci.org/data/general/eysenck.html>.
 }
 \usage{
-memory
+data(memory)
 }
 \description{
 A dataset on the number of words remembered from list,

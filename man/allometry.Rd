@@ -4,7 +4,8 @@
 \name{allometry}
 \alias{allometry}
 \title{Allometry}
-\format{A data frame with 63 rows and 5 variables:
+\format{
+A data frame with 63 rows and 5 variables:
 \describe{
   \item{\code{species}}{factor The tree species (PSME = Douglas fir, PIMO =
   Western white pine, PIPO = Ponderosa pine).}
@@ -12,9 +13,10 @@
   \item{\code{height}}{double Tree height (m).}
   \item{\code{leafarea}}{double Total leaf area (m2)}
   \item{\code{branchmass}}{double Total (oven-dry) mass of branches (kg).}
-}}
+}
+}
 \usage{
-allometry
+data(allometry)
 }
 \description{
 This dataset contains measurements of tree dimensions and biomass.

@@ -4,19 +4,21 @@
 \name{berkeley}
 \alias{berkeley}
 \title{Berkeley admissions data, 1973}
-\format{A data frame with 6 rows and 5 variables:
+\format{
+A data frame with 6 rows and 5 variables:
 \describe{
   \item{\code{Department}}{integer University Department, A-F}
   \item{\code{Admitted_Male}}{integer Nr. Admitted male applicants}
   \item{\code{Denied_Male}}{integer Nr. Denied male applicants}
   \item{\code{Admitted_Female}}{integer Nr. Addmitted female applicants}
   \item{\code{Denied_Female}}{integer Nr. Denied female applicants.}
-}}
+}
+}
 \source{
 <https://en.wikipedia.org/wiki/Simpson%27s_paradox#UC_Berkeley_gender_bias>
 }
 \usage{
-berkeley
+data(berkeley)
 }
 \description{
 A well-known example dataset, used as an excellent example for Simpson's Paradox.

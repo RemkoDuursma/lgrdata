@@ -4,7 +4,8 @@
 \name{germination_fire}
 \alias{germination_fire}
 \title{Seed germination as affected by fire}
-\format{A data frame with 576 rows and 7 variables:
+\format{
+A data frame with 576 rows and 7 variables:
 \describe{
   \item{\code{species}}{factor One of four Melaleuca species}
   \item{\code{temp}}{integer Temperature treatment (C)}
@@ -13,13 +14,14 @@
   \item{\code{cabinet}}{integer ID for the cabinet where seeds were treated}
   \item{\code{germ}}{integer Number of germinated seeds}
   \item{\code{n}}{integer Number of seeds tested (20 for all rows)}
-}}
+}
+}
 \source{
 Data are from Hewitt et al. 2015 (Austral Ecology 40(6):661-671), shared by Charles Morris,
 and simplified for the purpose of this book.
 }
 \usage{
-germination_fire
+data(germination_fire)
 }
 \description{
 Two datasets on the germination success of seeds of four \emph{Melaleuca}

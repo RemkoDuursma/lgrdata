@@ -4,7 +4,8 @@
 \name{pulse}
 \alias{pulse}
 \title{Pulse Rates before and after Exercise}
-\format{A data frame with 110 rows and 11 variables:
+\format{
+A data frame with 110 rows and 11 variables:
 \describe{
   \item{\code{Height}}{integer Height (cm)}
   \item{\code{Weight}}{double Weight (kg)}
@@ -18,12 +19,13 @@
   \item{\code{Pulse1}}{integer First pulse measurement (rate per minute)}
   \item{\code{Pulse2}}{integer Second pulse measurement (rate per minute)}
   \item{\code{Year}}{integer Year of class (93 - 98)}
-}}
+}
+}
 \source{
 <http://www.statsci.org/data/oz/ms212.html>
 }
 \usage{
-pulse
+data(pulse)
 }
 \description{
 Pulse rates measured on 110 participating students. Half of the students

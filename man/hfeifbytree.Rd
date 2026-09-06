@@ -4,7 +4,8 @@
 \name{hfeifbytree}
 \alias{hfeifbytree}
 \title{I x F at the HFE - tree observations}
-\format{A data frame with 9592 rows and 6 variables:
+\format{
+A data frame with 9592 rows and 6 variables:
 \describe{
   \item{\code{ID}}{integer A unique identifier for each tree.}
   \item{\code{plotnr}}{integer A total of sixteen plots (four treatments).}
@@ -13,12 +14,13 @@
   \item{\code{Date}}{factor The date of measurement (YYYY-MM-DD)}
   \item{\code{height}}{double Mean height for the sample trees ($m$).}
   \item{\code{diameter}}{double Mean diameter for the sample trees ($cm$).}
-}}
+}
+}
 \source{
 Data courtesy of Craig Barton and Burhan Amiji, from Western Sydney University.
 }
 \usage{
-hfeifbytree
+data(hfeifbytree)
 }
 \description{
 Heights and stem diameters of trees growing in a fertilization x irrigation experiment in

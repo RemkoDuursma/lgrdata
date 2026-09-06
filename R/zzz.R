@@ -252,13 +252,13 @@
 #' @format A data frame with 244 rows and 8 variables:
 #' \describe{
 #'   \item{\code{TIMESTAMP}}{factor Date and time}
-#'   \item{\code{FCO2}}{double Canopy CO2 flux (mu mol m$^{-2}$ s$^{-1}$)}
-#'   \item{\code{FH2O}}{double Canopy H2O flux (mmol m$^{-2}$ s$^{-1}$)}
-#'   \item{\code{ustar}}{double Roughness length (m s$^{-1}$)}
+#'   \item{\code{FCO2}}{double Canopy CO2 flux (mu mol m-2 s-1)}
+#'   \item{\code{FH2O}}{double Canopy H2O flux (mmol m-2 s-1)}
+#'   \item{\code{ustar}}{double Roughness length (m s-1)}
 #'   \item{\code{Tair}}{double Air temperature (degrees C)}
 #'   \item{\code{RH}}{double Relative humidity (\%)}
 #'   \item{\code{Tsoil}}{double Soil temperature (degrees C)}
-#'   \item{\code{Rain}}{integer Rainfall (mm half hour$^{-1}$)}
+#'   \item{\code{Rain}}{integer Rainfall (mm half hour-1)}
 #'}
 #' @source Data kindly provided by Victor Resco de Dios (in 2011), and simplified somewhat.
 "fluxtower"
@@ -386,9 +386,9 @@
 #'   \item{\code{AirPress}}{double Air pressure (kPa)}
 #'   \item{\code{RH}}{double Relative humidity (\%)}
 #'   \item{\code{VPD}}{double Vapour pressure deficit (kPa)}
-#'   \item{\code{PAR}}{double Photosynthetically active radiation (mu mol m$^{-2}$ s$^{-1}$)}
+#'   \item{\code{PAR}}{double Photosynthetically active radiation (mu mol m-2 s-1)}
 #'   \item{\code{Rain}}{double Precipitation (mm)}
-#'   \item{\code{wind}}{double Wind speed (m s$^{-1}$)}
+#'   \item{\code{wind}}{double Wind speed (m s-1)}
 #'   \item{\code{winddirection}}{double Wind direction (degrees)}
 #'}
 "hfemet2008"
@@ -416,12 +416,12 @@
 
 #' @title Hydro dam storage data
 #' @description This dataset describes the storage of the hydrodam on the
-#' Derwent river in Tasmania (Lake King William \& Lake St. Clair), in
+#' Derwent river in Tasmania (Lake King William and Lake St. Clair), in
 #' equivalent of energy stored.
 #' @format A data frame with 314 rows and 2 variables:
 #' \describe{
 #'   \item{\code{Date}}{factor The date of the bi-weekly reading (d/m/yyyy)}
-#'   \item{\code{storage}}{integer Total water stored, in energy equivalent ($GWh$).}
+#'   \item{\code{storage}}{integer Total water stored, in energy equivalent (GWh).}
 #'}
 #' @details DETAILS
 "hydro"
@@ -501,8 +501,8 @@
 #'   \item{\code{dfromtop}}{double Distance from top of tree (where leaf sample was taken) (m)}
 #'   \item{\code{totheight}}{double Total height of the tree (m)}
 #'   \item{\code{height}}{double Height from the ground (where sample was taken) (m)}
-#'   \item{\code{LMA}}{double Leaf mass per area (g m$^{-2}$)}
-#'   \item{\code{narea}}{double Nitrogen per area (gN m$^{-2}$)}
+#'   \item{\code{LMA}}{double Leaf mass per area (g m-2)}
+#'   \item{\code{narea}}{double Nitrogen per area (gN m-2)}
 #'}
 #'@examples
 #'data(treecanopy)

@@ -4,16 +4,18 @@
 \name{weightloss}
 \alias{weightloss}
 \title{Weight loss data}
-\format{A data frame with 67 rows and 2 variables:
+\format{
+A data frame with 67 rows and 2 variables:
 \describe{
   \item{\code{Date}}{factor Date, d/m/yy}
   \item{\code{Weight}}{double Weight, in pounds}
-}}
+}
+}
 \source{
 <http://jeremy.zawodny.com/blog/archives/006851.html>
 }
 \usage{
-weightloss
+data(weightloss)
 }
 \description{
 This dataset contains measurements of a Jeremy Zawodny

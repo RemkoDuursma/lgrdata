@@ -4,14 +4,16 @@
 \name{callitrishydraulic}
 \alias{callitrishydraulic}
 \title{Cavitation resistance for Callitris branches}
-\format{A data frame with 31 rows and 3 variables:
+\format{
+A data frame with 31 rows and 3 variables:
 \describe{
   \item{\code{Rep}}{integer Replicate - four branches are included.}
   \item{\code{Psi}}{double Positive-valued negative xylem water pressure (MPa)}
   \item{\code{PLC}}{double Percent loss conductivity (sometimes < 0)}
-}}
+}
+}
 \usage{
-callitrishydraulic
+data(callitrishydraulic)
 }
 \description{
 Measurements of so-called 'percent loss conductivity' (PLC) curves on terminal

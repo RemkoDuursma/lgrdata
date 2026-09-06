@@ -4,7 +4,8 @@
 \name{eucfacegc}
 \alias{eucfacegc}
 \title{EucFACE ground cover data}
-\format{A data frame with 192 rows and 8 variables:
+\format{
+A data frame with 192 rows and 8 variables:
 \describe{
   \item{\code{Date}}{integer Date of measurement (d/m/y, not yet converted to Date class)}
   \item{\code{Ring}}{integer The identity of the EucFACE Ring, the level at which the
@@ -16,12 +17,13 @@
   \item{\code{Litter}}{integer Number of points where leaf litter is observed.}
   \item{\code{Trt}}{integer The experimental treatment: \code{ctrl} for ambient levels of atmospheric
   carbon dioxide, \code{elev} for ambient plus 150ppm.}
-}}
+}
+}
 \source{
 Jeff Powell
 }
 \usage{
-eucfacegc
+data(eucfacegc)
 }
 \description{
 This file contains estimates of plant and litter cover within the rings of the
