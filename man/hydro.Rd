@@ -16,7 +16,7 @@ data(hydro)
 }
 \description{
 This dataset describes the storage of the hydrodam on the
-Derwent river in Tasmania (Lake King William \& Lake St. Clair), in
+Derwent river in Tasmania (Lake King William and Lake St. Clair), in
 equivalent of energy stored.
 }
 \details{
